@@ -1,0 +1,27 @@
+{
+  "profile_id": "ai-maker-space-the-ai-engineer-challenge",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/AI-Maker-Space/The-AI-Engineer-Challenge",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "true",
+      "rag": "true",
+      "embeddings": "true",
+      "vector_database": "true",
+      "agents": "true",
+      "tool_calling": "true",
+      "mcp": "true"
+    },
+    "engineering_signals": {
+      "testing": "true",
+      "ci_cd": "true",
+      "docker": "true",
+      "api_service": "true",
+      "documentation": "true"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:46:12.776916Z",
+  "processed_at": "2026-08-11T13:50:56.819331+00:00"
+}

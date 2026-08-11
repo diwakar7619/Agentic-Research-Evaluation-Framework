@@ -1,0 +1,27 @@
+{
+  "profile_id": "rohitg00-ai-engineering-from-scratch",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "true",
+      "rag": "true",
+      "embeddings": "true",
+      "vector_database": "true",
+      "agents": "true",
+      "tool_calling": "true",
+      "mcp": "true"
+    },
+    "engineering_signals": {
+      "testing": "true",
+      "ci_cd": "true",
+      "docker": "true",
+      "api_service": "true",
+      "documentation": "true"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:44:46.195773Z",
+  "processed_at": "2026-08-11T14:09:57.775366+00:00"
+}

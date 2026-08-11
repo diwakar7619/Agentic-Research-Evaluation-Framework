@@ -1,0 +1,27 @@
+{
+  "profile_id": "karthikreddy-7-ai-engineering-playbook",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/karthikreddy-7/ai-engineering-playbook",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "true",
+      "rag": "true",
+      "embeddings": "true",
+      "vector_database": "true",
+      "agents": "true",
+      "tool_calling": "true",
+      "mcp": "true"
+    },
+    "engineering_signals": {
+      "testing": "true",
+      "ci_cd": "true",
+      "docker": "true",
+      "api_service": "true",
+      "documentation": "true"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:46:50.203917Z",
+  "processed_at": "2026-08-11T14:03:20.479928+00:00"
+}

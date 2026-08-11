@@ -1,0 +1,1093 @@
+{
+  "started_at": "2026-08-11T13:44:43.459367+00:00",
+  "target_count": 120,
+  "candidate_count": 120,
+  "processed": 120,
+  "succeeded": 120,
+  "skipped": 0,
+  "failed": 0,
+  "failures": [],
+  "records": [
+    {
+      "evidence_id": "patchy631-ai-engineering-hub",
+      "username": "patchy631",
+      "repository_name": "ai-engineering-hub",
+      "repository_url": "https://github.com/patchy631/ai-engineering-hub",
+      "status": "success",
+      "characters": 13332,
+      "path": "data\\evidence\\patchy631-ai-engineering-hub.json"
+    },
+    {
+      "evidence_id": "rohitg00-ai-engineering-from-scratch",
+      "username": "rohitg00",
+      "repository_name": "ai-engineering-from-scratch",
+      "repository_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "status": "success",
+      "characters": 48998,
+      "path": "data\\evidence\\rohitg00-ai-engineering-from-scratch.json"
+    },
+    {
+      "evidence_id": "antonosika-gpt-engineer",
+      "username": "AntonOsika",
+      "repository_name": "gpt-engineer",
+      "repository_url": "https://github.com/AntonOsika/gpt-engineer",
+      "status": "success",
+      "characters": 5279,
+      "path": "data\\evidence\\antonosika-gpt-engineer.json"
+    },
+    {
+      "evidence_id": "dair-ai-prompt-engineering-guide",
+      "username": "dair-ai",
+      "repository_name": "Prompt-Engineering-Guide",
+      "repository_url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "status": "success",
+      "characters": 3619,
+      "path": "data\\evidence\\dair-ai-prompt-engineering-guide.json"
+    },
+    {
+      "evidence_id": "ashishps1-learn-ai-engineering",
+      "username": "ashishps1",
+      "repository_name": "learn-ai-engineering",
+      "repository_url": "https://github.com/ashishps1/learn-ai-engineering",
+      "status": "success",
+      "characters": 806,
+      "path": "data\\evidence\\ashishps1-learn-ai-engineering.json"
+    },
+    {
+      "evidence_id": "hemansnation-ai-engineer-headquarters",
+      "username": "hemansnation",
+      "repository_name": "AI-Engineer-Headquarters",
+      "repository_url": "https://github.com/hemansnation/AI-Engineer-Headquarters",
+      "status": "success",
+      "characters": 1834,
+      "path": "data\\evidence\\hemansnation-ai-engineer-headquarters.json"
+    },
+    {
+      "evidence_id": "microsoftlearning-ai-102-aiengineer",
+      "username": "MicrosoftLearning",
+      "repository_name": "AI-102-AIEngineer",
+      "repository_url": "https://github.com/MicrosoftLearning/AI-102-AIEngineer",
+      "status": "success",
+      "characters": 500,
+      "path": "data\\evidence\\microsoftlearning-ai-102-aiengineer.json"
+    },
+    {
+      "evidence_id": "sumanth077-ai-engineering-toolkit",
+      "username": "Sumanth077",
+      "repository_name": "ai-engineering-toolkit",
+      "repository_url": "https://github.com/Sumanth077/ai-engineering-toolkit",
+      "status": "success",
+      "characters": 21917,
+      "path": "data\\evidence\\sumanth077-ai-engineering-toolkit.json"
+    },
+    {
+      "evidence_id": "sumanth077-hands-on-ai-engineering",
+      "username": "Sumanth077",
+      "repository_name": "Hands-On-AI-Engineering",
+      "repository_url": "https://github.com/Sumanth077/Hands-On-AI-Engineering",
+      "status": "success",
+      "characters": 17656,
+      "path": "data\\evidence\\sumanth077-hands-on-ai-engineering.json"
+    },
+    {
+      "evidence_id": "coleam00-context-engineering-intro",
+      "username": "coleam00",
+      "repository_name": "context-engineering-intro",
+      "repository_url": "https://github.com/coleam00/context-engineering-intro",
+      "status": "success",
+      "characters": 7787,
+      "path": "data\\evidence\\coleam00-context-engineering-intro.json"
+    },
+    {
+      "evidence_id": "athivvat-ai-engineer-guide",
+      "username": "athivvat",
+      "repository_name": "ai-engineer-guide",
+      "repository_url": "https://github.com/athivvat/ai-engineer-guide",
+      "status": "success",
+      "characters": 596,
+      "path": "data\\evidence\\athivvat-ai-engineer-guide.json"
+    },
+    {
+      "evidence_id": "microsoft-ai-engineering-coach",
+      "username": "microsoft",
+      "repository_name": "AI-Engineering-Coach",
+      "repository_url": "https://github.com/microsoft/AI-Engineering-Coach",
+      "status": "success",
+      "characters": 6534,
+      "path": "data\\evidence\\microsoft-ai-engineering-coach.json"
+    },
+    {
+      "evidence_id": "https-deeplearning-ai-machine-learning-engineering-for-production-public",
+      "username": "https-deeplearning-ai",
+      "repository_name": "machine-learning-engineering-for-production-public",
+      "repository_url": "https://github.com/https-deeplearning-ai/machine-learning-engineering-for-production-public",
+      "status": "success",
+      "characters": 339,
+      "path": "data\\evidence\\https-deeplearning-ai-machine-learning-engineering-for-production-public.json"
+    },
+    {
+      "evidence_id": "alexeygrigorev-ai-engineering-field-guide",
+      "username": "alexeygrigorev",
+      "repository_name": "ai-engineering-field-guide",
+      "repository_url": "https://github.com/alexeygrigorev/ai-engineering-field-guide",
+      "status": "success",
+      "characters": 7345,
+      "path": "data\\evidence\\alexeygrigorev-ai-engineering-field-guide.json"
+    },
+    {
+      "evidence_id": "break-into-data-ai-engineer-toolkit",
+      "username": "break-into-data",
+      "repository_name": "ai-engineer-toolkit",
+      "repository_url": "https://github.com/break-into-data/ai-engineer-toolkit",
+      "status": "success",
+      "characters": 9311,
+      "path": "data\\evidence\\break-into-data-ai-engineer-toolkit.json"
+    },
+    {
+      "evidence_id": "interviewready-ai-engineering-resources",
+      "username": "InterviewReady",
+      "repository_name": "ai-engineering-resources",
+      "repository_url": "https://github.com/InterviewReady/ai-engineering-resources",
+      "status": "success",
+      "characters": 1419,
+      "path": "data\\evidence\\interviewready-ai-engineering-resources.json"
+    },
+    {
+      "evidence_id": "chiphuyen-aie-book",
+      "username": "chiphuyen",
+      "repository_name": "aie-book",
+      "repository_url": "https://github.com/chiphuyen/aie-book",
+      "status": "success",
+      "characters": 14996,
+      "path": "data\\evidence\\chiphuyen-aie-book.json"
+    },
+    {
+      "evidence_id": "amitshekhariitbhu-ai-engineering-interview-questions",
+      "username": "amitshekhariitbhu",
+      "repository_name": "ai-engineering-interview-questions",
+      "repository_url": "https://github.com/amitshekhariitbhu/ai-engineering-interview-questions",
+      "status": "success",
+      "characters": 50948,
+      "path": "data\\evidence\\amitshekhariitbhu-ai-engineering-interview-questions.json"
+    },
+    {
+      "evidence_id": "walkinglabs-learn-harness-engineering",
+      "username": "walkinglabs",
+      "repository_name": "learn-harness-engineering",
+      "repository_url": "https://github.com/walkinglabs/learn-harness-engineering",
+      "status": "success",
+      "characters": 33378,
+      "path": "data\\evidence\\walkinglabs-learn-harness-engineering.json"
+    },
+    {
+      "evidence_id": "adithya-s-k-ai-engineering_academy",
+      "username": "adithya-s-k",
+      "repository_name": "AI-Engineering.academy",
+      "repository_url": "https://github.com/adithya-s-k/AI-Engineering.academy",
+      "status": "success",
+      "characters": 2959,
+      "path": "data\\evidence\\adithya-s-k-ai-engineering_academy.json"
+    },
+    {
+      "evidence_id": "cfregly-ai-performance-engineering",
+      "username": "cfregly",
+      "repository_name": "ai-performance-engineering",
+      "repository_url": "https://github.com/cfregly/ai-performance-engineering",
+      "status": "success",
+      "characters": 13124,
+      "path": "data\\evidence\\cfregly-ai-performance-engineering.json"
+    },
+    {
+      "evidence_id": "cobusgreyling-loop-engineering",
+      "username": "cobusgreyling",
+      "repository_name": "loop-engineering",
+      "repository_url": "https://github.com/cobusgreyling/loop-engineering",
+      "status": "success",
+      "characters": 19904,
+      "path": "data\\evidence\\cobusgreyling-loop-engineering.json"
+    },
+    {
+      "evidence_id": "stas00-ml-engineering",
+      "username": "stas00",
+      "repository_name": "ml-engineering",
+      "repository_url": "https://github.com/stas00/ml-engineering",
+      "status": "success",
+      "characters": 8601,
+      "path": "data\\evidence\\stas00-ml-engineering.json"
+    },
+    {
+      "evidence_id": "dataexpert-io-ai-engineer-handbook",
+      "username": "DataExpert-io",
+      "repository_name": "ai-engineer-handbook",
+      "repository_url": "https://github.com/DataExpert-io/ai-engineer-handbook",
+      "status": "success",
+      "characters": 7559,
+      "path": "data\\evidence\\dataexpert-io-ai-engineer-handbook.json"
+    },
+    {
+      "evidence_id": "acheong08-edgegpt",
+      "username": "acheong08",
+      "repository_name": "EdgeGPT",
+      "repository_url": "https://github.com/acheong08/EdgeGPT",
+      "status": "success",
+      "characters": 9252,
+      "path": "data\\evidence\\acheong08-edgegpt.json"
+    },
+    {
+      "evidence_id": "matsuolab-lecture-ai-engineering",
+      "username": "matsuolab",
+      "repository_name": "lecture-ai-engineering",
+      "repository_url": "https://github.com/matsuolab/lecture-ai-engineering",
+      "status": "success",
+      "characters": 2912,
+      "path": "data\\evidence\\matsuolab-lecture-ai-engineering.json"
+    },
+    {
+      "evidence_id": "ai-infra-curriculum-ai-infra-engineer-learning",
+      "username": "ai-infra-curriculum",
+      "repository_name": "ai-infra-engineer-learning",
+      "repository_url": "https://github.com/ai-infra-curriculum/ai-infra-engineer-learning",
+      "status": "success",
+      "characters": 17263,
+      "path": "data\\evidence\\ai-infra-curriculum-ai-infra-engineer-learning.json"
+    },
+    {
+      "evidence_id": "krishnaik06-ai-engineer-roadmap-2024",
+      "username": "krishnaik06",
+      "repository_name": "AI-Engineer-Roadmap-2024",
+      "repository_url": "https://github.com/krishnaik06/AI-Engineer-Roadmap-2024",
+      "status": "success",
+      "characters": 2972,
+      "path": "data\\evidence\\krishnaik06-ai-engineer-roadmap-2024.json"
+    },
+    {
+      "evidence_id": "agenticailabs-ai-engineering-roadmap",
+      "username": "AgenticAiLabs",
+      "repository_name": "Ai-Engineering-Roadmap",
+      "repository_url": "https://github.com/AgenticAiLabs/Ai-Engineering-Roadmap",
+      "status": "success",
+      "characters": 5690,
+      "path": "data\\evidence\\agenticailabs-ai-engineering-roadmap.json"
+    },
+    {
+      "evidence_id": "nirdiamant-prompt_engineering",
+      "username": "NirDiamant",
+      "repository_name": "Prompt_Engineering",
+      "repository_url": "https://github.com/NirDiamant/Prompt_Engineering",
+      "status": "success",
+      "characters": 23290,
+      "path": "data\\evidence\\nirdiamant-prompt_engineering.json"
+    },
+    {
+      "evidence_id": "brightpool-prompt-engineering-for-generative-ai-examples",
+      "username": "BrightPool",
+      "repository_name": "prompt-engineering-for-generative-ai-examples",
+      "repository_url": "https://github.com/BrightPool/prompt-engineering-for-generative-ai-examples",
+      "status": "success",
+      "characters": 3276,
+      "path": "data\\evidence\\brightpool-prompt-engineering-for-generative-ai-examples.json"
+    },
+    {
+      "evidence_id": "googlecloudplatform-applied-ai-engineering-samples",
+      "username": "GoogleCloudPlatform",
+      "repository_name": "applied-ai-engineering-samples",
+      "repository_url": "https://github.com/GoogleCloudPlatform/applied-ai-engineering-samples",
+      "status": "success",
+      "characters": 3379,
+      "path": "data\\evidence\\googlecloudplatform-applied-ai-engineering-samples.json"
+    },
+    {
+      "evidence_id": "microsoft-pyrit",
+      "username": "microsoft",
+      "repository_name": "PyRIT",
+      "repository_url": "https://github.com/microsoft/PyRIT",
+      "status": "success",
+      "characters": 1275,
+      "path": "data\\evidence\\microsoft-pyrit.json"
+    },
+    {
+      "evidence_id": "michaelliv-pi-generative-ui",
+      "username": "Michaelliv",
+      "repository_name": "pi-generative-ui",
+      "repository_url": "https://github.com/Michaelliv/pi-generative-ui",
+      "status": "success",
+      "characters": 8266,
+      "path": "data\\evidence\\michaelliv-pi-generative-ui.json"
+    },
+    {
+      "evidence_id": "aws-samples-bedrock-engineer",
+      "username": "aws-samples",
+      "repository_name": "bedrock-engineer",
+      "repository_url": "https://github.com/aws-samples/bedrock-engineer",
+      "status": "success",
+      "characters": 17543,
+      "path": "data\\evidence\\aws-samples-bedrock-engineer.json"
+    },
+    {
+      "evidence_id": "brandonhimpfen-awesome-prompt-engineering",
+      "username": "brandonhimpfen",
+      "repository_name": "awesome-prompt-engineering",
+      "repository_url": "https://github.com/brandonhimpfen/awesome-prompt-engineering",
+      "status": "success",
+      "characters": 3955,
+      "path": "data\\evidence\\brandonhimpfen-awesome-prompt-engineering.json"
+    },
+    {
+      "evidence_id": "sakha1370-generative_ai_engineering_coursera",
+      "username": "sakha1370",
+      "repository_name": "Generative_AI_Engineering_Coursera",
+      "repository_url": "https://github.com/sakha1370/Generative_AI_Engineering_Coursera",
+      "status": "success",
+      "characters": 545,
+      "path": "data\\evidence\\sakha1370-generative_ai_engineering_coursera.json"
+    },
+    {
+      "evidence_id": "onvoyage-ai-gtm-engineer-skills",
+      "username": "onvoyage-ai",
+      "repository_name": "gtm-engineer-skills",
+      "repository_url": "https://github.com/onvoyage-ai/gtm-engineer-skills",
+      "status": "success",
+      "characters": 10832,
+      "path": "data\\evidence\\onvoyage-ai-gtm-engineer-skills.json"
+    },
+    {
+      "evidence_id": "build-on-aws-generative-ai-prompt-engineering",
+      "username": "build-on-aws",
+      "repository_name": "generative-ai-prompt-engineering",
+      "repository_url": "https://github.com/build-on-aws/generative-ai-prompt-engineering",
+      "status": "success",
+      "characters": 1430,
+      "path": "data\\evidence\\build-on-aws-generative-ai-prompt-engineering.json"
+    },
+    {
+      "evidence_id": "monika-4dec-prompt-engineering--generative-ai",
+      "username": "monika-4dec",
+      "repository_name": "Prompt-Engineering--Generative-AI",
+      "repository_url": "https://github.com/monika-4dec/Prompt-Engineering--Generative-AI",
+      "status": "success",
+      "characters": 4201,
+      "path": "data\\evidence\\monika-4dec-prompt-engineering--generative-ai.json"
+    },
+    {
+      "evidence_id": "gair-nlp-cognition-engineering",
+      "username": "GAIR-NLP",
+      "repository_name": "cognition-engineering",
+      "repository_url": "https://github.com/GAIR-NLP/cognition-engineering",
+      "status": "success",
+      "characters": 21658,
+      "path": "data\\evidence\\gair-nlp-cognition-engineering.json"
+    },
+    {
+      "evidence_id": "rkaushik2007-databricks-certified-generative-ai-engineer-associate-study-guide",
+      "username": "rkaushik2007",
+      "repository_name": "Databricks-Certified-Generative-AI-Engineer-Associate-Study-Guide",
+      "repository_url": "https://github.com/rkaushik2007/Databricks-Certified-Generative-AI-Engineer-Associate-Study-Guide",
+      "status": "success",
+      "characters": 3194,
+      "path": "data\\evidence\\rkaushik2007-databricks-certified-generative-ai-engineer-associate-study-guide.json"
+    },
+    {
+      "evidence_id": "fahimmohd-generative-ai-and-chatgpt-masterclass-for-software-engineers",
+      "username": "FahimMohd",
+      "repository_name": "Generative-AI-and-ChatGPT-Masterclass-for-Software-Engineers",
+      "repository_url": "https://github.com/FahimMohd/Generative-AI-and-ChatGPT-Masterclass-for-Software-Engineers",
+      "status": "success",
+      "characters": 430,
+      "path": "data\\evidence\\fahimmohd-generative-ai-and-chatgpt-masterclass-for-software-engineers.json"
+    },
+    {
+      "evidence_id": "anshulc55-generative-ai-engineering",
+      "username": "anshulc55",
+      "repository_name": "Generative-AI-Engineering",
+      "repository_url": "https://github.com/anshulc55/Generative-AI-Engineering",
+      "status": "success",
+      "characters": 1306,
+      "path": "data\\evidence\\anshulc55-generative-ai-engineering.json"
+    },
+    {
+      "evidence_id": "azure-pyrit",
+      "username": "Azure",
+      "repository_name": "PyRIT",
+      "repository_url": "https://github.com/Azure/PyRIT",
+      "status": "success",
+      "characters": 926,
+      "path": "data\\evidence\\azure-pyrit.json"
+    },
+    {
+      "evidence_id": "aipengineer-awesome-opensource-ai-engineering",
+      "username": "aipengineer",
+      "repository_name": "awesome-opensource-ai-engineering",
+      "repository_url": "https://github.com/aipengineer/awesome-opensource-ai-engineering",
+      "status": "success",
+      "characters": 6690,
+      "path": "data\\evidence\\aipengineer-awesome-opensource-ai-engineering.json"
+    },
+    {
+      "evidence_id": "packtpublishing-generative-ai-engineering-1e",
+      "username": "PacktPublishing",
+      "repository_name": "Generative-AI-Engineering-1E",
+      "repository_url": "https://github.com/PacktPublishing/Generative-AI-Engineering-1E",
+      "status": "success",
+      "characters": 1167,
+      "path": "data\\evidence\\packtpublishing-generative-ai-engineering-1e.json"
+    },
+    {
+      "evidence_id": "vchandu111-100-ai-engineer-interview-questions",
+      "username": "vchandu111",
+      "repository_name": "100-ai-engineer-interview-questions",
+      "repository_url": "https://github.com/vchandu111/100-ai-engineer-interview-questions",
+      "status": "success",
+      "characters": 45337,
+      "path": "data\\evidence\\vchandu111-100-ai-engineer-interview-questions.json"
+    },
+    {
+      "evidence_id": "dashverse-engineer-at-dashverse",
+      "username": "Dashverse",
+      "repository_name": "Engineer-at-Dashverse",
+      "repository_url": "https://github.com/Dashverse/Engineer-at-Dashverse",
+      "status": "success",
+      "characters": 5773,
+      "path": "data\\evidence\\dashverse-engineer-at-dashverse.json"
+    },
+    {
+      "evidence_id": "futurepathai-learn-ai-engineering",
+      "username": "FuturePathAI",
+      "repository_name": "Learn-AI-Engineering",
+      "repository_url": "https://github.com/FuturePathAI/Learn-AI-Engineering",
+      "status": "success",
+      "characters": 2198,
+      "path": "data\\evidence\\futurepathai-learn-ai-engineering.json"
+    },
+    {
+      "evidence_id": "edyoda-generative-ai-engineer",
+      "username": "edyoda",
+      "repository_name": "Generative-AI-Engineer",
+      "repository_url": "https://github.com/edyoda/Generative-AI-Engineer",
+      "status": "success",
+      "characters": 2877,
+      "path": "data\\evidence\\edyoda-generative-ai-engineer.json"
+    },
+    {
+      "evidence_id": "bindusekhargorintla-generative-ai-engineering-with-databricks",
+      "username": "BindusekharGorintla",
+      "repository_name": "Generative-AI-Engineering-with-Databricks",
+      "repository_url": "https://github.com/BindusekharGorintla/Generative-AI-Engineering-with-Databricks",
+      "status": "success",
+      "characters": 2013,
+      "path": "data\\evidence\\bindusekhargorintla-generative-ai-engineering-with-databricks.json"
+    },
+    {
+      "evidence_id": "thepradip-how-to-become-an-ai-engineer-in-2026",
+      "username": "thepradip",
+      "repository_name": "How-to-become-an-AI-Engineer-in-2026",
+      "repository_url": "https://github.com/thepradip/How-to-become-an-AI-Engineer-in-2026",
+      "status": "success",
+      "characters": 15866,
+      "path": "data\\evidence\\thepradip-how-to-become-an-ai-engineer-in-2026.json"
+    },
+    {
+      "evidence_id": "derar-alhussein-databricks-certified-generative-ai-engineer-associate",
+      "username": "derar-alhussein",
+      "repository_name": "Databricks-Certified-Generative-AI-Engineer-Associate",
+      "repository_url": "https://github.com/derar-alhussein/Databricks-Certified-Generative-AI-Engineer-Associate",
+      "status": "success",
+      "characters": 309,
+      "path": "data\\evidence\\derar-alhussein-databricks-certified-generative-ai-engineer-associate.json"
+    },
+    {
+      "evidence_id": "hazrat-ali9-generative-ai-engineer",
+      "username": "Hazrat-Ali9",
+      "repository_name": "Generative-AI-Engineer",
+      "repository_url": "https://github.com/Hazrat-Ali9/Generative-AI-Engineer",
+      "status": "success",
+      "characters": 7431,
+      "path": "data\\evidence\\hazrat-ali9-generative-ai-engineer.json"
+    },
+    {
+      "evidence_id": "armandoordonez-ai-engineering",
+      "username": "armandoordonez",
+      "repository_name": "AI-Engineering",
+      "repository_url": "https://github.com/armandoordonez/AI-Engineering",
+      "status": "success",
+      "characters": 484,
+      "path": "data\\evidence\\armandoordonez-ai-engineering.json"
+    },
+    {
+      "evidence_id": "aidachip-aidachip_workshop_01",
+      "username": "aidachip",
+      "repository_name": "AIDAChip_Workshop_01",
+      "repository_url": "https://github.com/aidachip/AIDAChip_Workshop_01",
+      "status": "success",
+      "characters": 5705,
+      "path": "data\\evidence\\aidachip-aidachip_workshop_01.json"
+    },
+    {
+      "evidence_id": "gopiashokan-apple-inspired-ai-calculator-using-computer-vision-and-generative-ai",
+      "username": "gopiashokan",
+      "repository_name": "Apple-Inspired-AI-Calculator-using-Computer-Vision-and-Generative-AI",
+      "repository_url": "https://github.com/gopiashokan/Apple-Inspired-AI-Calculator-using-Computer-Vision-and-Generative-AI",
+      "status": "success",
+      "characters": 5608,
+      "path": "data\\evidence\\gopiashokan-apple-inspired-ai-calculator-using-computer-vision-and-generative-ai.json"
+    },
+    {
+      "evidence_id": "aiwithhassan-ai-skin-specialist",
+      "username": "AIwithhassan",
+      "repository_name": "ai-skin-specialist",
+      "repository_url": "https://github.com/AIwithhassan/ai-skin-specialist",
+      "status": "success",
+      "characters": 9227,
+      "path": "data\\evidence\\aiwithhassan-ai-skin-specialist.json"
+    },
+    {
+      "evidence_id": "mohammadwasiq0786-ibm-generative-ai-engineering-with-llms-specialization",
+      "username": "MohammadWasiq0786",
+      "repository_name": "IBM-Generative-AI-Engineering-with-LLMs-Specialization",
+      "repository_url": "https://github.com/MohammadWasiq0786/IBM-Generative-AI-Engineering-with-LLMs-Specialization",
+      "status": "success",
+      "characters": 5326,
+      "path": "data\\evidence\\mohammadwasiq0786-ibm-generative-ai-engineering-with-llms-specialization.json"
+    },
+    {
+      "evidence_id": "ed-donner-llm_engineering",
+      "username": "ed-donner",
+      "repository_name": "llm_engineering",
+      "repository_url": "https://github.com/ed-donner/llm_engineering",
+      "status": "success",
+      "characters": 7866,
+      "path": "data\\evidence\\ed-donner-llm_engineering.json"
+    },
+    {
+      "evidence_id": "kalyanks-nlp-llm-engineer-toolkit",
+      "username": "KalyanKS-NLP",
+      "repository_name": "llm-engineer-toolkit",
+      "repository_url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
+      "status": "success",
+      "characters": 27666,
+      "path": "data\\evidence\\kalyanks-nlp-llm-engineer-toolkit.json"
+    },
+    {
+      "evidence_id": "packtpublishing-llm-engineers-handbook",
+      "username": "PacktPublishing",
+      "repository_name": "LLM-Engineers-Handbook",
+      "repository_url": "https://github.com/PacktPublishing/LLM-Engineers-Handbook",
+      "status": "success",
+      "characters": 23964,
+      "path": "data\\evidence\\packtpublishing-llm-engineers-handbook.json"
+    },
+    {
+      "evidence_id": "sylphai-inc-llm-engineer-handbook",
+      "username": "SylphAI-Inc",
+      "repository_name": "LLM-engineer-handbook",
+      "repository_url": "https://github.com/SylphAI-Inc/LLM-engineer-handbook",
+      "status": "success",
+      "characters": 18806,
+      "path": "data\\evidence\\sylphai-inc-llm-engineer-handbook.json"
+    },
+    {
+      "evidence_id": "dataexpert-io-llm-driven-data-engineering",
+      "username": "DataExpert-io",
+      "repository_name": "llm-driven-data-engineering",
+      "repository_url": "https://github.com/DataExpert-io/llm-driven-data-engineering",
+      "status": "success",
+      "characters": 2001,
+      "path": "data\\evidence\\dataexpert-io-llm-driven-data-engineering.json"
+    },
+    {
+      "evidence_id": "nebius-academy-llm-engineering-essentials",
+      "username": "Nebius-Academy",
+      "repository_name": "LLM-Engineering-Essentials",
+      "repository_url": "https://github.com/Nebius-Academy/LLM-Engineering-Essentials",
+      "status": "success",
+      "characters": 3034,
+      "path": "data\\evidence\\nebius-academy-llm-engineering-essentials.json"
+    },
+    {
+      "evidence_id": "skyzh-tiny-llm",
+      "username": "skyzh",
+      "repository_name": "tiny-llm",
+      "repository_url": "https://github.com/skyzh/tiny-llm",
+      "status": "success",
+      "characters": 5069,
+      "path": "data\\evidence\\skyzh-tiny-llm.json"
+    },
+    {
+      "evidence_id": "cystanford-aigc_llm_engineering",
+      "username": "cystanford",
+      "repository_name": "aigc_LLM_engineering",
+      "repository_url": "https://github.com/cystanford/aigc_LLM_engineering",
+      "status": "success",
+      "characters": 2808,
+      "path": "data\\evidence\\cystanford-aigc_llm_engineering.json"
+    },
+    {
+      "evidence_id": "snwfdhmp-awesome-gpt-prompt-engineering",
+      "username": "snwfdhmp",
+      "repository_name": "awesome-gpt-prompt-engineering",
+      "repository_url": "https://github.com/snwfdhmp/awesome-gpt-prompt-engineering",
+      "status": "success",
+      "characters": 18954,
+      "path": "data\\evidence\\snwfdhmp-awesome-gpt-prompt-engineering.json"
+    },
+    {
+      "evidence_id": "ai-maker-space-the-ai-engineer-challenge",
+      "username": "AI-Maker-Space",
+      "repository_name": "The-AI-Engineer-Challenge",
+      "repository_url": "https://github.com/AI-Maker-Space/The-AI-Engineer-Challenge",
+      "status": "success",
+      "characters": 8204,
+      "path": "data\\evidence\\ai-maker-space-the-ai-engineer-challenge.json"
+    },
+    {
+      "evidence_id": "meirtz-awesome-context-engineering",
+      "username": "Meirtz",
+      "repository_name": "Awesome-Context-Engineering",
+      "repository_url": "https://github.com/Meirtz/Awesome-Context-Engineering",
+      "status": "success",
+      "characters": 58617,
+      "path": "data\\evidence\\meirtz-awesome-context-engineering.json"
+    },
+    {
+      "evidence_id": "walkinglabs-awesome-harness-engineering",
+      "username": "walkinglabs",
+      "repository_name": "awesome-harness-engineering",
+      "repository_url": "https://github.com/walkinglabs/awesome-harness-engineering",
+      "status": "success",
+      "characters": 27052,
+      "path": "data\\evidence\\walkinglabs-awesome-harness-engineering.json"
+    },
+    {
+      "evidence_id": "pdichone-ai-llm-engineer-course",
+      "username": "pdichone",
+      "repository_name": "ai-llm-engineer-course",
+      "repository_url": "https://github.com/pdichone/ai-llm-engineer-course",
+      "status": "success",
+      "characters": 3046,
+      "path": "data\\evidence\\pdichone-ai-llm-engineer-course.json"
+    },
+    {
+      "evidence_id": "curiousily-get-things-done-with-prompt-engineering-and-langchain",
+      "username": "curiousily",
+      "repository_name": "Get-Things-Done-with-Prompt-Engineering-and-LangChain",
+      "repository_url": "https://github.com/curiousily/Get-Things-Done-with-Prompt-Engineering-and-LangChain",
+      "status": "success",
+      "characters": 582,
+      "path": "data\\evidence\\curiousily-get-things-done-with-prompt-engineering-and-langchain.json"
+    },
+    {
+      "evidence_id": "adongwanai-llm-resume-template",
+      "username": "adongwanai",
+      "repository_name": "LLM-Resume-Template",
+      "repository_url": "https://github.com/adongwanai/LLM-Resume-Template",
+      "status": "success",
+      "characters": 5832,
+      "path": "data\\evidence\\adongwanai-llm-resume-template.json"
+    },
+    {
+      "evidence_id": "lamini-ai-prompt-engineering-open-llms",
+      "username": "lamini-ai",
+      "repository_name": "prompt-engineering-open-llms",
+      "repository_url": "https://github.com/lamini-ai/prompt-engineering-open-llms",
+      "status": "success",
+      "characters": 675,
+      "path": "data\\evidence\\lamini-ai-prompt-engineering-open-llms.json"
+    },
+    {
+      "evidence_id": "neolabhq-context-engineering-kit",
+      "username": "NeoLabHQ",
+      "repository_name": "context-engineering-kit",
+      "repository_url": "https://github.com/NeoLabHQ/context-engineering-kit",
+      "status": "success",
+      "characters": 39430,
+      "path": "data\\evidence\\neolabhq-context-engineering-kit.json"
+    },
+    {
+      "evidence_id": "theblackhatmagician-promptengineering",
+      "username": "theblackhatmagician",
+      "repository_name": "PromptEngineering",
+      "repository_url": "https://github.com/theblackhatmagician/PromptEngineering",
+      "status": "success",
+      "characters": 2759,
+      "path": "data\\evidence\\theblackhatmagician-promptengineering.json"
+    },
+    {
+      "evidence_id": "debnsuma-fcc-ai-engineering-aws",
+      "username": "debnsuma",
+      "repository_name": "fcc-ai-engineering-aws",
+      "repository_url": "https://github.com/debnsuma/fcc-ai-engineering-aws",
+      "status": "success",
+      "characters": 5629,
+      "path": "data\\evidence\\debnsuma-fcc-ai-engineering-aws.json"
+    },
+    {
+      "evidence_id": "h9-tec-llm-systems-engineering-roadmap",
+      "username": "h9-tec",
+      "repository_name": "llm-systems-engineering-roadmap",
+      "repository_url": "https://github.com/h9-tec/llm-systems-engineering-roadmap",
+      "status": "success",
+      "characters": 39673,
+      "path": "data\\evidence\\h9-tec-llm-systems-engineering-roadmap.json"
+    },
+    {
+      "evidence_id": "ombharatiya-ai-system-design-guide",
+      "username": "ombharatiya",
+      "repository_name": "ai-system-design-guide",
+      "repository_url": "https://github.com/ombharatiya/ai-system-design-guide",
+      "status": "success",
+      "characters": 24327,
+      "path": "data\\evidence\\ombharatiya-ai-system-design-guide.json"
+    },
+    {
+      "evidence_id": "ratnesh-181998-ai-engineer",
+      "username": "Ratnesh-181998",
+      "repository_name": "AI-Engineer",
+      "repository_url": "https://github.com/Ratnesh-181998/AI-Engineer",
+      "status": "success",
+      "characters": 9584,
+      "path": "data\\evidence\\ratnesh-181998-ai-engineer.json"
+    },
+    {
+      "evidence_id": "deepset-ai-haystack",
+      "username": "deepset-ai",
+      "repository_name": "haystack",
+      "repository_url": "https://github.com/deepset-ai/haystack",
+      "status": "success",
+      "characters": 7910,
+      "path": "data\\evidence\\deepset-ai-haystack.json"
+    },
+    {
+      "evidence_id": "eazybytes-spring-ai",
+      "username": "eazybytes",
+      "repository_name": "spring-ai",
+      "repository_url": "https://github.com/eazybytes/spring-ai",
+      "status": "success",
+      "characters": 2594,
+      "path": "data\\evidence\\eazybytes-spring-ai.json"
+    },
+    {
+      "evidence_id": "denis2054-context-engineering-for-multi-agent-systems",
+      "username": "Denis2054",
+      "repository_name": "Context-Engineering-for-Multi-Agent-Systems",
+      "repository_url": "https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems",
+      "status": "success",
+      "characters": 17666,
+      "path": "data\\evidence\\denis2054-context-engineering-for-multi-agent-systems.json"
+    },
+    {
+      "evidence_id": "jihoo-kim-awesome-context-engineering",
+      "username": "jihoo-kim",
+      "repository_name": "awesome-context-engineering",
+      "repository_url": "https://github.com/jihoo-kim/awesome-context-engineering",
+      "status": "success",
+      "characters": 3707,
+      "path": "data\\evidence\\jihoo-kim-awesome-context-engineering.json"
+    },
+    {
+      "evidence_id": "viktoriasemaan-data-engineering",
+      "username": "viktoriasemaan",
+      "repository_name": "data-engineering",
+      "repository_url": "https://github.com/viktoriasemaan/data-engineering",
+      "status": "success",
+      "characters": 988,
+      "path": "data\\evidence\\viktoriasemaan-data-engineering.json"
+    },
+    {
+      "evidence_id": "sauravp97-ai-engineering-primer",
+      "username": "SauravP97",
+      "repository_name": "ai-engineering-primer",
+      "repository_url": "https://github.com/SauravP97/ai-engineering-primer",
+      "status": "success",
+      "characters": 17744,
+      "path": "data\\evidence\\sauravp97-ai-engineering-primer.json"
+    },
+    {
+      "evidence_id": "packtpublishing-ai-llm-engineering-mastery---genai-rag-complete-guide",
+      "username": "PacktPublishing",
+      "repository_name": "AI-LLM-Engineering-Mastery---GenAI-RAG-Complete-Guide",
+      "repository_url": "https://github.com/PacktPublishing/AI-LLM-Engineering-Mastery---GenAI-RAG-Complete-Guide",
+      "status": "success",
+      "characters": 457,
+      "path": "data\\evidence\\packtpublishing-ai-llm-engineering-mastery---genai-rag-complete-guide.json"
+    },
+    {
+      "evidence_id": "bonigarcia-context-engineering",
+      "username": "bonigarcia",
+      "repository_name": "context-engineering",
+      "repository_url": "https://github.com/bonigarcia/context-engineering",
+      "status": "success",
+      "characters": 19310,
+      "path": "data\\evidence\\bonigarcia-context-engineering.json"
+    },
+    {
+      "evidence_id": "kvsdileep-rag-for-engineers",
+      "username": "kvsdileep",
+      "repository_name": "rag-for-engineers",
+      "repository_url": "https://github.com/kvsdileep/rag-for-engineers",
+      "status": "success",
+      "characters": 11331,
+      "path": "data\\evidence\\kvsdileep-rag-for-engineers.json"
+    },
+    {
+      "evidence_id": "4geeksacademy-ai-engineering-company-project-monorepo",
+      "username": "4GeeksAcademy",
+      "repository_name": "ai-engineering-company-project-monorepo",
+      "repository_url": "https://github.com/4GeeksAcademy/ai-engineering-company-project-monorepo",
+      "status": "success",
+      "characters": 11061,
+      "path": "data\\evidence\\4geeksacademy-ai-engineering-company-project-monorepo.json"
+    },
+    {
+      "evidence_id": "joshithreddyaleti-ai_engineer_interview_prep",
+      "username": "JoshithReddyAleti",
+      "repository_name": "AI_Engineer_Interview_Prep",
+      "repository_url": "https://github.com/JoshithReddyAleti/AI_Engineer_Interview_Prep",
+      "status": "success",
+      "characters": 5695,
+      "path": "data\\evidence\\joshithreddyaleti-ai_engineer_interview_prep.json"
+    },
+    {
+      "evidence_id": "galileo-agent-labs-eval-engineer",
+      "username": "Galileo-Agent-Labs",
+      "repository_name": "eval-engineer",
+      "repository_url": "https://github.com/Galileo-Agent-Labs/eval-engineer",
+      "status": "success",
+      "characters": 7697,
+      "path": "data\\evidence\\galileo-agent-labs-eval-engineer.json"
+    },
+    {
+      "evidence_id": "timothywarner-org-context-engineering",
+      "username": "timothywarner-org",
+      "repository_name": "context-engineering",
+      "repository_url": "https://github.com/timothywarner-org/context-engineering",
+      "status": "success",
+      "characters": 9841,
+      "path": "data\\evidence\\timothywarner-org-context-engineering.json"
+    },
+    {
+      "evidence_id": "gil-son-language-ai-engineering-lab",
+      "username": "gil-son",
+      "repository_name": "language-ai-engineering-lab",
+      "repository_url": "https://github.com/gil-son/language-ai-engineering-lab",
+      "status": "success",
+      "characters": 9024,
+      "path": "data\\evidence\\gil-son-language-ai-engineering-lab.json"
+    },
+    {
+      "evidence_id": "karthikreddy-7-ai-engineering-playbook",
+      "username": "karthikreddy-7",
+      "repository_name": "ai-engineering-playbook",
+      "repository_url": "https://github.com/karthikreddy-7/ai-engineering-playbook",
+      "status": "success",
+      "characters": 8729,
+      "path": "data\\evidence\\karthikreddy-7-ai-engineering-playbook.json"
+    },
+    {
+      "evidence_id": "phodal-build-agent-context-engineering",
+      "username": "phodal",
+      "repository_name": "build-agent-context-engineering",
+      "repository_url": "https://github.com/phodal/build-agent-context-engineering",
+      "status": "success",
+      "characters": 15135,
+      "path": "data\\evidence\\phodal-build-agent-context-engineering.json"
+    },
+    {
+      "evidence_id": "harsh-aranga-ai-engineering-bootcamp",
+      "username": "harsh-aranga",
+      "repository_name": "ai-engineering-bootcamp",
+      "repository_url": "https://github.com/harsh-aranga/ai-engineering-bootcamp",
+      "status": "success",
+      "characters": 5133,
+      "path": "data\\evidence\\harsh-aranga-ai-engineering-bootcamp.json"
+    },
+    {
+      "evidence_id": "transitive-bullshit-agentic",
+      "username": "transitive-bullshit",
+      "repository_name": "agentic",
+      "repository_url": "https://github.com/transitive-bullshit/agentic",
+      "status": "success",
+      "characters": 2824,
+      "path": "data\\evidence\\transitive-bullshit-agentic.json"
+    },
+    {
+      "evidence_id": "fosowl-agenticseek",
+      "username": "Fosowl",
+      "repository_name": "agenticSeek",
+      "repository_url": "https://github.com/Fosowl/agenticSeek",
+      "status": "success",
+      "characters": 33661,
+      "path": "data\\evidence\\fosowl-agenticseek.json"
+    },
+    {
+      "evidence_id": "vercel-ai",
+      "username": "vercel",
+      "repository_name": "ai",
+      "repository_url": "https://github.com/vercel/ai",
+      "status": "success",
+      "characters": 6355,
+      "path": "data\\evidence\\vercel-ai.json"
+    },
+    {
+      "evidence_id": "activepieces-activepieces",
+      "username": "activepieces",
+      "repository_name": "activepieces",
+      "repository_url": "https://github.com/activepieces/activepieces",
+      "status": "success",
+      "characters": 4107,
+      "path": "data\\evidence\\activepieces-activepieces.json"
+    },
+    {
+      "evidence_id": "flowiseai-flowise",
+      "username": "FlowiseAI",
+      "repository_name": "Flowise",
+      "repository_url": "https://github.com/FlowiseAI/Flowise",
+      "status": "success",
+      "characters": 2993,
+      "path": "data\\evidence\\flowiseai-flowise.json"
+    },
+    {
+      "evidence_id": "microsoft-autogen",
+      "username": "microsoft",
+      "repository_name": "autogen",
+      "repository_url": "https://github.com/microsoft/autogen",
+      "status": "success",
+      "characters": 10906,
+      "path": "data\\evidence\\microsoft-autogen.json"
+    },
+    {
+      "evidence_id": "panaversity-learn-agentic-ai",
+      "username": "panaversity",
+      "repository_name": "learn-agentic-ai",
+      "repository_url": "https://github.com/panaversity/learn-agentic-ai",
+      "status": "success",
+      "characters": 18946,
+      "path": "data\\evidence\\panaversity-learn-agentic-ai.json"
+    },
+    {
+      "evidence_id": "earendil-works-pi",
+      "username": "earendil-works",
+      "repository_name": "pi",
+      "repository_url": "https://github.com/earendil-works/pi",
+      "status": "success",
+      "characters": 5866,
+      "path": "data\\evidence\\earendil-works-pi.json"
+    },
+    {
+      "evidence_id": "leonxlnx-agentic-ai-prompt-research",
+      "username": "Leonxlnx",
+      "repository_name": "agentic-ai-prompt-research",
+      "repository_url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+      "status": "success",
+      "characters": 8583,
+      "path": "data\\evidence\\leonxlnx-agentic-ai-prompt-research.json"
+    },
+    {
+      "evidence_id": "ed-donner-agentic",
+      "username": "ed-donner",
+      "repository_name": "agentic",
+      "repository_url": "https://github.com/ed-donner/agentic",
+      "status": "success",
+      "characters": 4379,
+      "path": "data\\evidence\\ed-donner-agentic.json"
+    },
+    {
+      "evidence_id": "microsoft-ai-agents-for-beginners",
+      "username": "microsoft",
+      "repository_name": "ai-agents-for-beginners",
+      "repository_url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "status": "success",
+      "characters": 14052,
+      "path": "data\\evidence\\microsoft-ai-agents-for-beginners.json"
+    },
+    {
+      "evidence_id": "wenyuchiou-awesome-agentic-ai-zh",
+      "username": "WenyuChiou",
+      "repository_name": "awesome-agentic-ai-zh",
+      "repository_url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+      "status": "success",
+      "characters": 15664,
+      "path": "data\\evidence\\wenyuchiou-awesome-agentic-ai-zh.json"
+    },
+    {
+      "evidence_id": "obra-superpowers",
+      "username": "obra",
+      "repository_name": "superpowers",
+      "repository_url": "https://github.com/obra/superpowers",
+      "status": "success",
+      "characters": 9800,
+      "path": "data\\evidence\\obra-superpowers.json"
+    },
+    {
+      "evidence_id": "alibaba-spring-ai-alibaba",
+      "username": "alibaba",
+      "repository_name": "spring-ai-alibaba",
+      "repository_url": "https://github.com/alibaba/spring-ai-alibaba",
+      "status": "success",
+      "characters": 7876,
+      "path": "data\\evidence\\alibaba-spring-ai-alibaba.json"
+    },
+    {
+      "evidence_id": "shubhamsaboo-awesome-llm-apps",
+      "username": "Shubhamsaboo",
+      "repository_name": "awesome-llm-apps",
+      "repository_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "status": "success",
+      "characters": 24323,
+      "path": "data\\evidence\\shubhamsaboo-awesome-llm-apps.json"
+    },
+    {
+      "evidence_id": "cloudflare-agentic-inbox",
+      "username": "cloudflare",
+      "repository_name": "agentic-inbox",
+      "repository_url": "https://github.com/cloudflare/agentic-inbox",
+      "status": "success",
+      "characters": 5958,
+      "path": "data\\evidence\\cloudflare-agentic-inbox.json"
+    },
+    {
+      "evidence_id": "crewaiinc-crewai",
+      "username": "crewAIInc",
+      "repository_name": "crewAI",
+      "repository_url": "https://github.com/crewAIInc/crewAI",
+      "status": "success",
+      "characters": 26590,
+      "path": "data\\evidence\\crewaiinc-crewai.json"
+    },
+    {
+      "evidence_id": "slavakurilyak-awesome-ai-agents",
+      "username": "slavakurilyak",
+      "repository_name": "awesome-ai-agents",
+      "repository_url": "https://github.com/slavakurilyak/awesome-ai-agents",
+      "status": "success",
+      "characters": 80486,
+      "path": "data\\evidence\\slavakurilyak-awesome-ai-agents.json"
+    },
+    {
+      "evidence_id": "charmbracelet-crush",
+      "username": "charmbracelet",
+      "repository_name": "crush",
+      "repository_url": "https://github.com/charmbracelet/crush",
+      "status": "success",
+      "characters": 27774,
+      "path": "data\\evidence\\charmbracelet-crush.json"
+    },
+    {
+      "evidence_id": "agent0ai-agent-zero",
+      "username": "agent0ai",
+      "repository_name": "agent-zero",
+      "repository_url": "https://github.com/agent0ai/agent-zero",
+      "status": "success",
+      "characters": 17552,
+      "path": "data\\evidence\\agent0ai-agent-zero.json"
+    },
+    {
+      "evidence_id": "nibzard-awesome-agentic-patterns",
+      "username": "nibzard",
+      "repository_name": "awesome-agentic-patterns",
+      "repository_url": "https://github.com/nibzard/awesome-agentic-patterns",
+      "status": "success",
+      "characters": 4210,
+      "path": "data\\evidence\\nibzard-awesome-agentic-patterns.json"
+    }
+  ],
+  "finished_at": "2026-08-11T13:47:18.350455+00:00"
+}

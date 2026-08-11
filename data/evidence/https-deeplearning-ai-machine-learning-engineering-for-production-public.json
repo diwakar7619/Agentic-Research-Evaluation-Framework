@@ -1,0 +1,9 @@
+{
+  "evidence_id": "https-deeplearning-ai-machine-learning-engineering-for-production-public",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/https-deeplearning-ai/machine-learning-engineering-for-production-public",
+  "source_type": "github_repository",
+  "evidence_text": "Welcome to the public repo for [deeplearning.ai](https://www.deeplearning.ai/)'s Machine Learning Engineering for Production Specialization.\nHere you will find public resources for the courses of this specialization.\nAt the time being we are not accepting Pull Requests but if you have any suggestion or spot any bug please raise an issue.",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:45:00.741756Z"
+}

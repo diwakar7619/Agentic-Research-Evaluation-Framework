@@ -1,0 +1,9 @@
+{
+  "evidence_id": "interviewready-ai-engineering-resources",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/InterviewReady/ai-engineering-resources",
+  "source_type": "github_repository",
+  "evidence_text": "Research papers for software engineers to transition to AI Engineering\n- [Deep Reinforcement Learning with Human Feedback](https://arxiv.org/pdf/1706.03741)\n- [Fine-Tuning Language Models with RHLF](https://arxiv.org/pdf/1909.08593)\n- [Training language models with RHLF](https://arxiv.org/pdf/2203.02155)\n- [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/pdf/2201.11903)\n- [Chain of thought](https://arxiv.org/pdf/2411.14405v1)\n- [Demystifying Long Chain-of-Thought Reasoning in LLMs](https://arxiv.org/pdf/2502.03373)\n- [Can AI be made to think critically](https://arxiv.org/pdf/2501.04682)\n- [Evolving Deeper LLM Thinking](https://arxiv.org/pdf/2501.09891)\n- [LLMs Can Easily Learn to Reason from Demonstrations Structure](https://arxiv.org/pdf/2502.07374)\n- [ViViT: A Video Vision Transformer](https://arxiv.org/pdf/2103.15691)\n- [Joint Embedding abstractions with self-supervised video masks](https://arxiv.org/pdf/2404.08471)\n- [Facebook VideoJAM ai gen](https://arxiv.org/pdf/2502.02492)\n- [DSPy](https://arxiv.org/pdf/2310.03714)\n- [Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering](https://arxiv.org/pdf/2404.17723v1)\n- [Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)\nAI Engineering: [https://interviewready.io/course-page/ai-engineering](https://interviewready.io/course-page/ai-engineering)",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:45:04.164274Z"
+}

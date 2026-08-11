@@ -1,0 +1,9 @@
+{
+  "evidence_id": "athivvat-ai-engineer-guide",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/athivvat/ai-engineer-guide",
+  "source_type": "github_repository",
+  "evidence_text": "AI engineer guide is a comprehensive resource for going from software engineer/non-software engineer to professional AI engineer. Whether you're a seasoned software engineer or venturing into the tech world from a different discipline, our resource is tailored to help you navigate the exciting journey to becoming a professional AI Engineer.\nThis Edition 2 reflects the latest trends in AI engineering for 2025, including Agentic AI, Advanced RAG systems, Multimodal AI, and Enterprise AI deployment.\nSee [CONTRIBUTING.](https://github.com/athivvat/ai-engineer-guide/blob/master/CONTRIBUTING.md)",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:44:58.578784Z"
+}

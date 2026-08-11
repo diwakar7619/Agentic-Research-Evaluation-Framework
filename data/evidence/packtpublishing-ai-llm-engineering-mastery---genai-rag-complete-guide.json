@@ -1,0 +1,9 @@
+{
+  "evidence_id": "packtpublishing-ai-llm-engineering-mastery---genai-rag-complete-guide",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/PacktPublishing/AI-LLM-Engineering-Mastery---GenAI-RAG-Complete-Guide",
+  "source_type": "github_repository",
+  "evidence_text": "You signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert\nThis is the code repository for AI & LLM Engineering Mastery - GenAI, RAG Complete Guide, published by Packt. It contains all the supporting project files necessary to work through the video course from start to finish.",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:46:40.046633Z"
+}

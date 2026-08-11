@@ -1,0 +1,9 @@
+{
+  "evidence_id": "curiousily-get-things-done-with-prompt-engineering-and-langchain",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/curiousily/Get-Things-Done-with-Prompt-Engineering-and-LangChain",
+  "source_type": "github_repository",
+  "evidence_text": "You signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert\nLangChain & Prompt Engineering tutorials on Large Language Models (LLMs) such as ChatGPT with custom data. Jupyter notebooks on loading and indexing data, creating prompt templates, CSV agents, and using retrieval QA chains to query the custom data. Projects for using a private LLM (Llama 2) for chat with PDF files, tweets sentiment analysis.",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:46:19.291935Z"
+}

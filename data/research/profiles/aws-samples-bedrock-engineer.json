@@ -1,0 +1,27 @@
+{
+  "profile_id": "aws-samples-bedrock-engineer",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/aws-samples/bedrock-engineer",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "true",
+      "rag": "true",
+      "embeddings": "unknown",
+      "vector_database": "unknown",
+      "agents": "true",
+      "tool_calling": "true",
+      "mcp": "true"
+    },
+    "engineering_signals": {
+      "testing": "unknown",
+      "ci_cd": "unknown",
+      "docker": "true",
+      "api_service": "true",
+      "documentation": "true"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:45:28.329758Z",
+  "processed_at": "2026-08-11T13:53:25.245802+00:00"
+}

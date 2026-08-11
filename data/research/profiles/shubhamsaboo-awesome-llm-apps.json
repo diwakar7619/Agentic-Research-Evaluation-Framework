@@ -1,0 +1,27 @@
+{
+  "profile_id": "shubhamsaboo-awesome-llm-apps",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "true",
+      "rag": "true",
+      "embeddings": "true",
+      "vector_database": "true",
+      "agents": "true",
+      "tool_calling": "true",
+      "mcp": "true"
+    },
+    "engineering_signals": {
+      "testing": "true",
+      "ci_cd": "true",
+      "docker": "true",
+      "api_service": "true",
+      "documentation": "true"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:47:11.188194Z",
+  "processed_at": "2026-08-11T14:10:36.423419+00:00"
+}

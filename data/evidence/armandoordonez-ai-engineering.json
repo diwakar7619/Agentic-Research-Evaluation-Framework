@@ -1,0 +1,9 @@
+{
+  "evidence_id": "armandoordonez-ai-engineering",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/armandoordonez/AI-Engineering",
+  "source_type": "github_repository",
+  "evidence_text": "You signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert\nSesión 1 — Agentes de IA, Orquestación y Protocolos\nNotebooks del curso de IA aplicada para equipos de desarrollo (function calling, agentes ReAct, LangChain, LlamaIndex, MCP y taller práctico), en versión Anthropic y Gemini: sesion1-agentes-ia/.",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:45:55.022576Z"
+}

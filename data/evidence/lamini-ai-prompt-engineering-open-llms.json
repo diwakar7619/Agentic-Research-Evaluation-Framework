@@ -1,0 +1,9 @@
+{
+  "evidence_id": "lamini-ai-prompt-engineering-open-llms",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/lamini-ai/prompt-engineering-open-llms",
+  "source_type": "github_repository",
+  "evidence_text": "This is a collaboration between [Lamini](https://lamini.ai/) and [Deeplearning.ai](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/). Taught by [Sharon Zhou](/lamini-ai/prompt-engineering-open-llms/blob/master).\nNavigate [here](https://app.lamini.ai/) to copy your key.\nOK if you want more, [let us know](https://www.lamini.ai/contact). Particularly for enterprise usage.\n- \n[Simple RAG](https://github.com/lamini-ai/simple-rag) : RAG in 80 lines of code. Fast, simple, easy. 80% of what you need. RAG is a form of prompt-engineering.\n- \n[Lamini SDK](https://github.com/lamini-ai/lamini-sdk/tree/main)\n- \n[Lamini docs](https://lamini-ai.github.io/)",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:46:23.696962Z"
+}

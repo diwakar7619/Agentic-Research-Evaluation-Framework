@@ -1,0 +1,9 @@
+{
+  "evidence_id": "microsoft-pyrit",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/microsoft/PyRIT",
+  "source_type": "github_repository",
+  "evidence_text": "The Python Risk Identification Tool for generative AI (PyRIT) is an open source framework built to empower security professionals and engineers to proactively identify risks in generative AI systems.\n- Check out our [website](https://microsoft.github.io/PyRIT/) for more information\nabout how to use, install, or contribute to PyRIT.\n- Review our [security policy](https://github.com/microsoft/PyRIT/security/policy) to report vulnerabilities privately through the Microsoft Security Response Center.\n- Visit our [Discord server](https://discord.gg/9fMpq3tc8u) to chat with the team and community.\nThis project may contain trademarks or logos for projects, products, or services.\nAuthorized use of Microsoft trademarks or logos is subject to and must follow\n[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).\nUse of Microsoft trademarks or logos in modified versions of this project must\nnot cause confusion or imply Microsoft sponsorship.\nAny use of third-party trademarks or logos are subject to those third-party's\npolicies.\nIf you use PyRIT in your research, please cite the tool itself following the [CITATION.cff](/microsoft/PyRIT/blob/main/CITATION.cff) file in the root of this repository.",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:45:25.867580Z"
+}

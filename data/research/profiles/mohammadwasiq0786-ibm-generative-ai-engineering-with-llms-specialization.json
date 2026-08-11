@@ -1,0 +1,27 @@
+{
+  "profile_id": "mohammadwasiq0786-ibm-generative-ai-engineering-with-llms-specialization",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/MohammadWasiq0786/IBM-Generative-AI-Engineering-with-LLMs-Specialization",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "unknown",
+      "rag": "unknown",
+      "embeddings": "unknown",
+      "vector_database": "unknown",
+      "agents": "unknown",
+      "tool_calling": "unknown",
+      "mcp": "unknown"
+    },
+    "engineering_signals": {
+      "testing": "unknown",
+      "ci_cd": "unknown",
+      "docker": "unknown",
+      "api_service": "unknown",
+      "documentation": "unknown"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:45:59.433728Z",
+  "processed_at": "2026-08-11T14:06:01.379185+00:00"
+}

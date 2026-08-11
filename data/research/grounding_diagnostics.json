@@ -1,0 +1,1701 @@
+{
+  "total_suspicious_claims": 124,
+  "by_group": {
+    "ai_capabilities": 68,
+    "engineering_signals": 56
+  },
+  "by_field": [
+    {
+      "field": "ci_cd",
+      "suspicious_claims": 27
+    },
+    {
+      "field": "docker",
+      "suspicious_claims": 22
+    },
+    {
+      "field": "tool_calling",
+      "suspicious_claims": 20
+    },
+    {
+      "field": "embeddings",
+      "suspicious_claims": 16
+    },
+    {
+      "field": "vector_database",
+      "suspicious_claims": 14
+    },
+    {
+      "field": "mcp",
+      "suspicious_claims": 12
+    },
+    {
+      "field": "rag",
+      "suspicious_claims": 3
+    },
+    {
+      "field": "agents",
+      "suspicious_claims": 3
+    },
+    {
+      "field": "api_service",
+      "suspicious_claims": 3
+    },
+    {
+      "field": "documentation",
+      "suspicious_claims": 2
+    },
+    {
+      "field": "testing",
+      "suspicious_claims": 2
+    }
+  ],
+  "top_profiles": [
+    {
+      "profile": "ai-maker-space-the-ai-engineer-challenge.json",
+      "suspicious_claims": 7
+    },
+    {
+      "profile": "gair-nlp-cognition-engineering.json",
+      "suspicious_claims": 7
+    },
+    {
+      "profile": "charmbracelet-crush.json",
+      "suspicious_claims": 6
+    },
+    {
+      "profile": "cobusgreyling-loop-engineering.json",
+      "suspicious_claims": 6
+    },
+    {
+      "profile": "fosowl-agenticseek.json",
+      "suspicious_claims": 6
+    },
+    {
+      "profile": "microsoft-ai-agents-for-beginners.json",
+      "suspicious_claims": 6
+    },
+    {
+      "profile": "sylphai-inc-llm-engineer-handbook.json",
+      "suspicious_claims": 6
+    },
+    {
+      "profile": "agent0ai-agent-zero.json",
+      "suspicious_claims": 5
+    },
+    {
+      "profile": "nirdiamant-prompt_engineering.json",
+      "suspicious_claims": 5
+    },
+    {
+      "profile": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "suspicious_claims": 5
+    },
+    {
+      "profile": "ai-infra-curriculum-ai-infra-engineer-learning.json",
+      "suspicious_claims": 4
+    },
+    {
+      "profile": "packtpublishing-llm-engineers-handbook.json",
+      "suspicious_claims": 4
+    },
+    {
+      "profile": "phodal-build-agent-context-engineering.json",
+      "suspicious_claims": 4
+    },
+    {
+      "profile": "timothywarner-org-context-engineering.json",
+      "suspicious_claims": 4
+    },
+    {
+      "profile": "bonigarcia-context-engineering.json",
+      "suspicious_claims": 3
+    },
+    {
+      "profile": "kalyanks-nlp-llm-engineer-toolkit.json",
+      "suspicious_claims": 3
+    },
+    {
+      "profile": "kvsdileep-rag-for-engineers.json",
+      "suspicious_claims": 3
+    },
+    {
+      "profile": "meirtz-awesome-context-engineering.json",
+      "suspicious_claims": 3
+    },
+    {
+      "profile": "panaversity-learn-agentic-ai.json",
+      "suspicious_claims": 3
+    },
+    {
+      "profile": "sumanth077-ai-engineering-toolkit.json",
+      "suspicious_claims": 3
+    },
+    {
+      "profile": "wenyuchiou-awesome-agentic-ai-zh.json",
+      "suspicious_claims": 3
+    },
+    {
+      "profile": "denis2054-context-engineering-for-multi-agent-systems.json",
+      "suspicious_claims": 2
+    },
+    {
+      "profile": "karthikreddy-7-ai-engineering-playbook.json",
+      "suspicious_claims": 2
+    },
+    {
+      "profile": "michaelliv-pi-generative-ui.json",
+      "suspicious_claims": 2
+    },
+    {
+      "profile": "neolabhq-context-engineering-kit.json",
+      "suspicious_claims": 2
+    },
+    {
+      "profile": "ombharatiya-ai-system-design-guide.json",
+      "suspicious_claims": 2
+    },
+    {
+      "profile": "rohitg00-ai-engineering-from-scratch.json",
+      "suspicious_claims": 2
+    },
+    {
+      "profile": "sauravp97-ai-engineering-primer.json",
+      "suspicious_claims": 2
+    },
+    {
+      "profile": "shubhamsaboo-awesome-llm-apps.json",
+      "suspicious_claims": 2
+    },
+    {
+      "profile": "slavakurilyak-awesome-ai-agents.json",
+      "suspicious_claims": 2
+    }
+  ],
+  "claims": [
+    {
+      "profile": "activepieces-activepieces.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "activepieces-activepieces.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "ieces let you experiment with various providers, or create your own agents using our ai sdk to help you build flows inside the builder. - 🏢 enterprise-ready: developers set up the tools, and anyone in the organization can use the no-code builder. full customization from branding to control. - 🔒 secure by design: self-hosted and network-gapped for maximum security and control over your data. - 🧠 human in the loop: delay execution for a period of time or require approval. these are "
+        }
+      ]
+    },
+    {
+      "profile": "agent0ai-agent-zero.json",
+      "group": "ai_capabilities",
+      "field": "rag",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "agent0ai-agent-zero.json",
+      "contexts": []
+    },
+    {
+      "profile": "agent0ai-agent-zero.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "agent0ai-agent-zero.json",
+      "contexts": []
+    },
+    {
+      "profile": "agent0ai-agent-zero.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "agent0ai-agent-zero.json",
+      "contexts": []
+    },
+    {
+      "profile": "agent0ai-agent-zero.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "agent0ai-agent-zero.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "r real local repositories. | | multi-agent cooperation | let agents delegate research, coding, analysis, or review tasks to focused subagents. | | transparent internals | prompts, tools, plugins, skills, and settings are inspectable and editable. | the desktop a0 launcher is the fastest guided path on a personal machine. download it, open it, and let it check docker, create instances, manage ports, and connect to local or remote agent zero installs. agent zero runs wherever docker"
+        },
+        {
+          "indicator": "tools",
+          "context": "nts) and[agent skills](https://github.com/addyosmani/agent-skills) . - memory systems - alternative memory backends, intelligent consolidation strategies, vector recall plugins. - tools and integrations - embedded terminals, custom browsers, deployment helpers, api clients. - ui extensions - chat rename controls, sidebar tweaks, theme packs, custom canvas panels. - workflow plugins - schedulers, multi-agent orchestration, project automations. install with a click from the web ui, "
+        },
+        {
+          "indicator": "tools",
+          "context": "multi-agent orchestration, project automations. install with a click from the web ui, or publish your own to the index repository. combined with custom prompts in prompts/, custom tools in tools/, mcp servers, a2a connectors, and project-scoped configuration, agent zero gives you a real surface area to shape the agent into whatever you need. see the [skills guide](/agent0ai/agent-zero/blob/main/docs/guides/skills.md), the [create a small plugin](/agent0ai/agent-zero/blob/main/docs"
+        },
+        {
+          "indicator": "tools",
+          "context": "nt orchestration, project automations. install with a click from the web ui, or publish your own to the index repository. combined with custom prompts in prompts/, custom tools in tools/, mcp servers, a2a connectors, and project-scoped configuration, agent zero gives you a real surface area to shape the agent into whatever you need. see the [skills guide](/agent0ai/agent-zero/blob/main/docs/guides/skills.md), the [create a small plugin](/agent0ai/agent-zero/blob/main/docs/guides/c"
+        },
+        {
+          "indicator": "tools",
+          "context": "ng, data analysis, plugin development, and tasks where several specialized perspectives are better than one overloaded context. almost nothing is hidden. prompts live in prompts/, tools live in tools/ or plugins, and built-in behavior can be inspected, changed, replaced, or extended. agent zero supports plugins, mcp, a2a, custom tools, custom prompts, project-scoped configuration, environment-based deployment settings, and a web ui designed to keep the agent's work readable in rea"
+        },
+        {
+          "indicator": "tools",
+          "context": "sis, plugin development, and tasks where several specialized perspectives are better than one overloaded context. almost nothing is hidden. prompts live in prompts/, tools live in tools/ or plugins, and built-in behavior can be inspected, changed, replaced, or extended. agent zero supports plugins, mcp, a2a, custom tools, custom prompts, project-scoped configuration, environment-based deployment settings, and a web ui designed to keep the agent's work readable in real time. time t"
+        },
+        {
+          "indicator": "tools",
+          "context": "n. prompts live in prompts/, tools live in tools/ or plugins, and built-in behavior can be inspected, changed, replaced, or extended. agent zero supports plugins, mcp, a2a, custom tools, custom prompts, project-scoped configuration, environment-based deployment settings, and a web ui designed to keep the agent's work readable in real time. time travel gives agent zero-owned /a0/usr workspaces snapshot history, diff inspection, travel, and revert. it is designed for recoverable age"
+        },
+        {
+          "indicator": "tools",
+          "context": "agent-zero/blob/main/docs/guides/memory.md) | | learn the everyday chat controls | [usage guide](/agent0ai/agent-zero/blob/main/docs/guides/usage.md) | | configure mcp or external tools | [mcp setup](/agent0ai/agent-zero/blob/main/docs/guides/mcp-setup.md) | | understand the architecture and internals | [deepwiki for agent zero](https://deepwiki.com/agent0ai/agent-zero) | | build an advanced extension | [extensions](/agent0ai/agent-zero/blob/main/docs/developer/extensions.md) | | "
+        }
+      ]
+    },
+    {
+      "profile": "agent0ai-agent-zero.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "agent0ai-agent-zero.json",
+      "contexts": []
+    },
+    {
+      "profile": "ai-infra-curriculum-ai-infra-engineer-learning.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-infra-curriculum-ai-infra-engineer-learning.json",
+      "contexts": []
+    },
+    {
+      "profile": "ai-infra-curriculum-ai-infra-engineer-learning.json",
+      "group": "ai_capabilities",
+      "field": "agents",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-infra-curriculum-ai-infra-engineer-learning.json",
+      "contexts": []
+    },
+    {
+      "profile": "ai-infra-curriculum-ai-infra-engineer-learning.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-infra-curriculum-ai-infra-engineer-learning.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "le 108: monitoring (25 questions) - module 109: iac (25 questions) - module 110: llm infrastructure (30 questions) - 📋 technology versions guide - complete specifications for 100+ tools - 🗺️ curriculum cross-reference - mapping to junior track - 📈 career progression guide - engineer to principal roadmap | module | topic | hours | status | quiz | |---|---|---|---|---| | 01 | foundations | 50h | ✅ complete (15 files) | ✅ 30q | | 02 | cloud computing | 50h | ✅ complete (11 files) | ✨"
+        },
+        {
+          "indicator": "tools",
+          "context": "engineer-learning/blob/main/resources/faq.md) - 📋 [technology versions guide](/ai-infra-curriculum/ai-infra-engineer-learning/blob/main/versions.md) - recommended versions for all tools and frameworks - 🗺️ [curriculum cross-reference](https://github.com/ai-infra-curriculum/.github/blob/main/curriculum_cross_reference.md) - mapping between junior and engineer tracks - 📈 [career progression guide](https://github.com/ai-infra-curriculum/.github/blob/main/career_progression.md) - comp"
+        }
+      ]
+    },
+    {
+      "profile": "ai-infra-curriculum-ai-infra-engineer-learning.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-infra-curriculum-ai-infra-engineer-learning.json",
+      "contexts": []
+    },
+    {
+      "profile": "ai-maker-space-the-ai-engineer-challenge.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-maker-space-the-ai-engineer-challenge.json",
+      "contexts": []
+    },
+    {
+      "profile": "ai-maker-space-the-ai-engineer-challenge.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-maker-space-the-ai-engineer-challenge.json",
+      "contexts": []
+    },
+    {
+      "profile": "ai-maker-space-the-ai-engineer-challenge.json",
+      "group": "ai_capabilities",
+      "field": "agents",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-maker-space-the-ai-engineer-challenge.json",
+      "contexts": []
+    },
+    {
+      "profile": "ai-maker-space-the-ai-engineer-challenge.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-maker-space-the-ai-engineer-challenge.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "ed with your expectations? why or why not? your answer: now test your app with prompts that require capabilities it may not have yet, such as: - real-time data - memory - external tools examples: - “what does my schedule look like tomorrow?” - “what time should i leave for the airport?” prompt: result: prompt: result: what are some limitations of your application? your answer: based on your vibe check, try improving your application: - adjust your prompt - change the model - add f"
+        }
+      ]
+    },
+    {
+      "profile": "ai-maker-space-the-ai-engineer-challenge.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-maker-space-the-ai-engineer-challenge.json",
+      "contexts": []
+    },
+    {
+      "profile": "ai-maker-space-the-ai-engineer-challenge.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-maker-space-the-ai-engineer-challenge.json",
+      "contexts": []
+    },
+    {
+      "profile": "ai-maker-space-the-ai-engineer-challenge.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ai-maker-space-the-ai-engineer-challenge.json",
+      "contexts": []
+    },
+    {
+      "profile": "amitshekhariitbhu-ai-engineering-interview-questions.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "amitshekhariitbhu-ai-engineering-interview-questions.json",
+      "contexts": []
+    },
+    {
+      "profile": "antonosika-gpt-engineer.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "antonosika-gpt-engineer.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "ke wizardcoder. see the [documentation](https://gpt-engineer.readthedocs.io/en/latest/open_models.html) for example instructions. the gpt-engineer community mission is to maintain tools that coding agent builders can use and facilitate collaboration in the open source community. if you are interested in contributing to this, we are interested in having you. if you want to see our broader ambitions, check out the [roadmap](https://github.com/gpt-engineer-org/gpt-engineer/blob/main/"
+        }
+      ]
+    },
+    {
+      "profile": "aws-samples-bedrock-engineer.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "aws-samples-bedrock-engineer.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "d system prompt. the system prompt is a crucial element that determines the agent's behavior. by clearly defining the agent's purpose, regulations, role, and when to use available tools, you can obtain more appropriate responses. click the tools icon in the bottom left to select the tools available to the agent. tools can be configured separately for each agent. the supported tools are: | tool name | description | |---|---| | createfolder | creates a new directory within the proje"
+        },
+        {
+          "indicator": "tools",
+          "context": " determines the agent's behavior. by clearly defining the agent's purpose, regulations, role, and when to use available tools, you can obtain more appropriate responses. click the tools icon in the bottom left to select the tools available to the agent. tools can be configured separately for each agent. the supported tools are: | tool name | description | |---|---| | createfolder | creates a new directory within the project structure. creates a new folder at the specified path. | "
+        },
+        {
+          "indicator": "tools",
+          "context": " defining the agent's purpose, regulations, role, and when to use available tools, you can obtain more appropriate responses. click the tools icon in the bottom left to select the tools available to the agent. tools can be configured separately for each agent. the supported tools are: | tool name | description | |---|---| | createfolder | creates a new directory within the project structure. creates a new folder at the specified path. | | writetofile | writes content to a file. cr"
+        },
+        {
+          "indicator": "tools",
+          "context": " regulations, role, and when to use available tools, you can obtain more appropriate responses. click the tools icon in the bottom left to select the tools available to the agent. tools can be configured separately for each agent. the supported tools are: | tool name | description | |---|---| | createfolder | creates a new directory within the project structure. creates a new folder at the specified path. | | writetofile | writes content to a file. creates a new file if it doesn't"
+        },
+        {
+          "indicator": "tools",
+          "context": "in more appropriate responses. click the tools icon in the bottom left to select the tools available to the agent. tools can be configured separately for each agent. the supported tools are: | tool name | description | |---|---| | createfolder | creates a new directory within the project structure. creates a new folder at the specified path. | | writetofile | writes content to a file. creates a new file if it doesn't exist or updates content if the file exists. | | readfiles | rea"
+        },
+        {
+          "indicator": "tools",
+          "context": "ent-preparation-toolkit). model context protocol (mcp) client integration allows bedrock engineer to connect to external mcp servers and dynamically load and use powerful external tools. this integration extends the capabilities of your ai assistant by allowing it to access and utilize the tools provided by the mcp server. for detailed information about mcp server configuration, see the [mcp server configuration guide](/aws-samples/bedrock-engineer/blob/main/docs/mcp-server/mcp_se"
+        },
+        {
+          "indicator": "tools",
+          "context": " external mcp servers and dynamically load and use powerful external tools. this integration extends the capabilities of your ai assistant by allowing it to access and utilize the tools provided by the mcp server. for detailed information about mcp server configuration, see the [mcp server configuration guide](/aws-samples/bedrock-engineer/blob/main/docs/mcp-server/mcp_server_configuration.md). schedule ai agent tasks to run automatically at specified intervals using cron expressi"
+        },
+        {
+          "indicator": "tools",
+          "context": "tion or filter by tags to discover agents that match your needs - detailed information - view comprehensive information about each agent including author, system prompt, supported tools, and usage scenarios - one-click addition - add any agent to your personal collection with a single click and start using it immediately - contribute your agents - share your custom agents with the community by becoming a contributor - browse and search - use the search bar to find specific agents "
+        }
+      ]
+    },
+    {
+      "profile": "bonigarcia-context-engineering.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "bonigarcia-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "bonigarcia-context-engineering.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "bonigarcia-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "bonigarcia-context-engineering.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "bonigarcia-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "charmbracelet-crush.json",
+      "group": "ai_capabilities",
+      "field": "rag",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "charmbracelet-crush.json",
+      "contexts": []
+    },
+    {
+      "profile": "charmbracelet-crush.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "charmbracelet-crush.json",
+      "contexts": []
+    },
+    {
+      "profile": "charmbracelet-crush.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "charmbracelet-crush.json",
+      "contexts": []
+    },
+    {
+      "profile": "charmbracelet-crush.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "charmbracelet-crush.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "your new coding bestie, now available in your favourite terminal. your tools, your code, and your workflows, wired into your llm of choice. 终端里的编程新搭档， 无缝接入你的工具、代码与工作流，全面兼容主流 llm 模型。 - multi-model: choose from a wide range of llms or add your own via openai- or anthropic-compatible apis - flexible: switch llms mid-session while preserving context - session-based: maintain mu"
+        },
+        {
+          "indicator": "tools",
+          "context": "se a package manager: # homebrew brew install charmbracelet/tap/crush # npm npm install -g @charmland/crush # arch linux (btw) yay -s crush-bin # nix nix run github:numtide/nix-ai-tools#crush # freebsd pkg install crush windows users: # winget winget install charmbracelet.crush # scoop scoop bucket add charm https://github.com/charmbracelet/scoop-bucket.git scoop install crush nix (nur) crush is available via the official charm [nur](https://github.com/nix-community/nur) in nur.re"
+        },
+        {
+          "indicator": "tools",
+          "context": " ollama --type ollama --base-url \"http://localhost:11434/v1\" # register a model on ollama. model add ollama/llama3.3 --name \"llama 3.3\" --context-window 128000 # auto-approve some tools. permissions allow view edit # include some other file on a specific machine. if [[ $hostname == \"babysquid\" ]]; then source ~/my-stuff/babysquid.sh fi # add an mcp server, with a github api token stored in 1password. mcp add github \\ --type http \\ --url \"https://api.githubcopilot.com/mcp/\" \\ --hea"
+        },
+        {
+          "indicator": "tools",
+          "context": "se for server-sent events. # crushrc # add a local mcp server that runs a node.js script. mcp add filesystem --command node --args /path/to/mcp-server.js \\ --timeout 10 --disabled-tools some-tool-name --env node_env production # add a github mcp server that uses an api token. mcp add github --type http --url \"https://api.githubcopilot.com/mcp/\" \\ --timeout 10 --header authorization \"bearer $gh_pat\" \\ --disabled-tools create_issue --disabled-tools create_pull_request # add a stream"
+        },
+        {
+          "indicator": "tools",
+          "context": "github mcp server that uses an api token. mcp add github --type http --url \"https://api.githubcopilot.com/mcp/\" \\ --timeout 10 --header authorization \"bearer $gh_pat\" \\ --disabled-tools create_issue --disabled-tools create_pull_request # add a streaming mcp server that uses sse. mcp add streaming-service --type sse --url \"https://example.com/mcp/sse\" \\ --timeout 10 --header api-key \"$api_key\" http and sse mcp servers that require oauth can use crush's built-in authorization-code f"
+        },
+        {
+          "indicator": "tools",
+          "context": " api token. mcp add github --type http --url \"https://api.githubcopilot.com/mcp/\" \\ --timeout 10 --header authorization \"bearer $gh_pat\" \\ --disabled-tools create_issue --disabled-tools create_pull_request # add a streaming mcp server that uses sse. mcp add streaming-service --type sse --url \"https://example.com/mcp/sse\" \\ --timeout 10 --header api-key \"$api_key\" http and sse mcp servers that require oauth can use crush's built-in authorization-code flow instead of a static author"
+        },
+        {
+          "indicator": "tools",
+          "context": "r cross-project instructions. think of these are personal additions to the system prompt. - ~/.config/crush/crush.md : crush-specific rules that would confuse other agentic coding tools. if you only use crush, this is the only one you need to edit. - ~/.config/agents.md : generic instructions that other coding tools might read. avoid referring to crush-specific features or workflows here. you probably only care about this if you use multiple agentic coding tools and want to share "
+        },
+        {
+          "indicator": "tools",
+          "context": "c rules that would confuse other agentic coding tools. if you only use crush, this is the only one you need to edit. - ~/.config/agents.md : generic instructions that other coding tools might read. avoid referring to crush-specific features or workflows here. you probably only care about this if you use multiple agentic coding tools and want to share instructions between them. you can customize these paths with option global-context-path. repeat the command to add multiple paths: "
+        }
+      ]
+    },
+    {
+      "profile": "charmbracelet-crush.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "charmbracelet-crush.json",
+      "contexts": []
+    },
+    {
+      "profile": "charmbracelet-crush.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "charmbracelet-crush.json",
+      "contexts": []
+    },
+    {
+      "profile": "cobusgreyling-loop-engineering.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "cobusgreyling-loop-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "cobusgreyling-loop-engineering.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "cobusgreyling-loop-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "cobusgreyling-loop-engineering.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "cobusgreyling-loop-engineering.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "/loop-engineering/blob/main/examples/opencode) | cli-first loops: cron/systemd + opencode run , skills, worktrees | | [loop (front door)](/cobusgreyling/loop-engineering/blob/main/tools/loop) | unified cli — npx @cobusgreyling/loop init \\| doctor \\| status \\| audit \\| cost ·[cli-front-door](/cobusgreyling/loop-engineering/blob/main/docs/cli-front-door.md) | | [loop-audit](/cobusgreyling/loop-engineering/blob/main/tools/loop-audit) | loop readiness score cli (v1.7 — constraints + g"
+        },
+        {
+          "indicator": "tools",
+          "context": "\\| doctor \\| status \\| audit \\| cost ·[cli-front-door](/cobusgreyling/loop-engineering/blob/main/docs/cli-front-door.md) | | [loop-audit](/cobusgreyling/loop-engineering/blob/main/tools/loop-audit) | loop readiness score cli (v1.7 — constraints + governance + harness runtime) — npx @cobusgreyling/loop audit . --suggest · alsoloop-audit | | [loop-init](/cobusgreyling/loop-engineering/blob/main/tools/loop-init) | scaffold starters + budget/run-log + constraints (v1.5) — npx @cobusgr"
+        },
+        {
+          "indicator": "tools",
+          "context": "core cli (v1.7 — constraints + governance + harness runtime) — npx @cobusgreyling/loop audit . --suggest · alsoloop-audit | | [loop-init](/cobusgreyling/loop-engineering/blob/main/tools/loop-init) | scaffold starters + budget/run-log + constraints (v1.5) — npx @cobusgreyling/loop init . --pattern daily-triage --tool grok · alsoloop-init | | [harness-foundry](https://github.com/cobusgreyling/harness-foundry) | companion runtime: versioned stacks, sessions, traces — npx @cobusgreyli"
+        },
+        {
+          "indicator": "tools",
+          "context": "ge | | [outerloop](https://github.com/cobusgreyling/outerloop) | companion governance: evidence → verdict → answerability | | [loop-cost](/cobusgreyling/loop-engineering/blob/main/tools/loop-cost) | token spend estimator — npx @cobusgreyling/loop-cost | | [loop-sync](/cobusgreyling/loop-engineering/blob/main/tools/loop-sync) | drift detection between state.md andloop.md —npx @cobusgreyling/loop-sync . | | [loop-context](/cobusgreyling/loop-engineering/blob/main/tools/loop-context)"
+        },
+        {
+          "indicator": "tools",
+          "context": "p-cost](/cobusgreyling/loop-engineering/blob/main/tools/loop-cost) | token spend estimator — npx @cobusgreyling/loop-cost | | [loop-sync](/cobusgreyling/loop-engineering/blob/main/tools/loop-sync) | drift detection between state.md andloop.md —npx @cobusgreyling/loop-sync . | | [loop-context](/cobusgreyling/loop-engineering/blob/main/tools/loop-context) | stateful memory manager + circuit breaker for long runs — npx @cobusgreyling/loop-context --check --ledger run.json | | [loop-m"
+        },
+        {
+          "indicator": "tools",
+          "context": "p-engineering/blob/main/tools/loop-sync) | drift detection between state.md andloop.md —npx @cobusgreyling/loop-sync . | | [loop-context](/cobusgreyling/loop-engineering/blob/main/tools/loop-context) | stateful memory manager + circuit breaker for long runs — npx @cobusgreyling/loop-context --check --ledger run.json | | [loop-mcp-server](/cobusgreyling/loop-engineering/blob/main/tools/mcp-server) | mcp runtime lookup for patterns, skills, state — npx @cobusgreyling/loop-mcp-server"
+        },
+        {
+          "indicator": "tools",
+          "context": "stateful memory manager + circuit breaker for long runs — npx @cobusgreyling/loop-context --check --ledger run.json | | [loop-mcp-server](/cobusgreyling/loop-engineering/blob/main/tools/mcp-server) | mcp runtime lookup for patterns, skills, state — npx @cobusgreyling/loop-mcp-server | | [loop-worktree](/cobusgreyling/loop-engineering/blob/main/tools/loop-worktree) | manage isolated git worktrees per fix attempt — npx @cobusgreyling/loop-worktree create --run-id <id> --pattern <p> "
+        },
+        {
+          "indicator": "tools",
+          "context": "ing/blob/main/tools/mcp-server) | mcp runtime lookup for patterns, skills, state — npx @cobusgreyling/loop-mcp-server | | [loop-worktree](/cobusgreyling/loop-engineering/blob/main/tools/loop-worktree) | manage isolated git worktrees per fix attempt — npx @cobusgreyling/loop-worktree create --run-id <id> --pattern <p> | | [loop-gate](/cobusgreyling/loop-engineering/blob/main/tools/loop-gate) | mechanical enforcement of the path denylist + auto-merge allowlist from gate.yaml —npx @c"
+        }
+      ]
+    },
+    {
+      "profile": "cobusgreyling-loop-engineering.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "cobusgreyling-loop-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "cobusgreyling-loop-engineering.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "cobusgreyling-loop-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "cobusgreyling-loop-engineering.json",
+      "group": "engineering_signals",
+      "field": "api_service",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "cobusgreyling-loop-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "denis2054-context-engineering-for-multi-agent-systems.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "denis2054-context-engineering-for-multi-agent-systems.json",
+      "contexts": []
+    },
+    {
+      "profile": "denis2054-context-engineering-for-multi-agent-systems.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "denis2054-context-engineering-for-multi-agent-systems.json",
+      "contexts": []
+    },
+    {
+      "profile": "fosowl-agenticseek.json",
+      "group": "ai_capabilities",
+      "field": "rag",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "fosowl-agenticseek.json",
+      "contexts": []
+    },
+    {
+      "profile": "fosowl-agenticseek.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "fosowl-agenticseek.json",
+      "contexts": []
+    },
+    {
+      "profile": "fosowl-agenticseek.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "fosowl-agenticseek.json",
+      "contexts": []
+    },
+    {
+      "profile": "fosowl-agenticseek.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "fosowl-agenticseek.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "nd ignores the address. option 2: llama.cpp or any other openai-compatible server on the server, start [llama.cpp's llama-server](https://github.com/ggml-org/llama.cpp/tree/master/tools/server) with your gguf model (lm-studio, vllm or any other server exposing an openai-compatible api works the same way): llama-server -m your-model.gguf --host 0.0.0.0 --port 8080 on your personal computer, use the lm-studio provider — it speaks the plain openai-compatible /v1/chat/completions api "
+        },
+        {
+          "indicator": "tools",
+          "context": "bocharge your agent for specialized tasks while staying in full control. see [contributing.md](/fosowl/agenticseek/blob/main/docs/contributing.md) to learn how to integrate custom tools! [fosowl](https://github.com/fosowl) | paris time"
+        }
+      ]
+    },
+    {
+      "profile": "fosowl-agenticseek.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "fosowl-agenticseek.json",
+      "contexts": []
+    },
+    {
+      "profile": "fosowl-agenticseek.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "fosowl-agenticseek.json",
+      "contexts": []
+    },
+    {
+      "profile": "gair-nlp-cognition-engineering.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "gair-nlp-cognition-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "gair-nlp-cognition-engineering.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "gair-nlp-cognition-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "gair-nlp-cognition-engineering.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "gair-nlp-cognition-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "gair-nlp-cognition-engineering.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "gair-nlp-cognition-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "gair-nlp-cognition-engineering.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "gair-nlp-cognition-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "gair-nlp-cognition-engineering.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "gair-nlp-cognition-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "gair-nlp-cognition-engineering.json",
+      "group": "engineering_signals",
+      "field": "documentation",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "gair-nlp-cognition-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "kalyanks-nlp-llm-engineer-toolkit.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "kalyanks-nlp-llm-engineer-toolkit.json",
+      "contexts": []
+    },
+    {
+      "profile": "kalyanks-nlp-llm-engineer-toolkit.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "kalyanks-nlp-llm-engineer-toolkit.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "ws you to build applications powered by llms, transformer models, vector search and more. | [link](https://github.com/deepset-ai/haystack) | | prompt flow | a suite of development tools designed to streamline the end-to-end development cycle of llm-based ai applications. | [link](https://github.com/microsoft/promptflow) | | griptape | a modular python framework for building ai-powered applications. | [link](https://github.com/griptape-ai/griptape) | | weave | weave is a toolkit fo"
+        },
+        {
+          "indicator": "tools",
+          "context": "crewaiinc/crewai) | | langgraph | build resilient language agents as graphs. | [link](https://github.com/langchain-ai/langgraph) | | agno | build ai agents with memory, knowledge, tools, and reasoning. chat with them using a beautiful agent ui. | [link](https://github.com/agno-agi/agno) | | agents sdk | build agentic apps using llms with context, tools, hand off to other specialized agents. | [link](https://platform.openai.com/docs/guides/agents-sdk) | | autogen | an open-source f"
+        },
+        {
+          "indicator": "tools",
+          "context": "knowledge, tools, and reasoning. chat with them using a beautiful agent ui. | [link](https://github.com/agno-agi/agno) | | agents sdk | build agentic apps using llms with context, tools, hand off to other specialized agents. | [link](https://platform.openai.com/docs/guides/agents-sdk) | | autogen | an open-source framework for building ai agent systems. | [link](https://github.com/microsoft/autogen) | | smolagents | library to build powerful agents in a few lines of code. | [link]"
+        },
+        {
+          "indicator": "tools",
+          "context": "ps://github.com/camel-ai/camel) | | beeai | build production-ready multi-agent systems in python. | [link](https://github.com/i-am-bee/beeai-framework/tree/main/python) | | gradio-tools | a python library for converting gradio apps into tools that can be leveraged by an llm-based agent to complete its task. | [link](https://github.com/freddyaboulton/gradio-tools) | | composio | production ready toolset for ai agents. | [link](https://github.com/composiohq/composio) | | atomic agen"
+        },
+        {
+          "indicator": "tools",
+          "context": "ion-ready multi-agent systems in python. | [link](https://github.com/i-am-bee/beeai-framework/tree/main/python) | | gradio-tools | a python library for converting gradio apps into tools that can be leveraged by an llm-based agent to complete its task. | [link](https://github.com/freddyaboulton/gradio-tools) | | composio | production ready toolset for ai agents. | [link](https://github.com/composiohq/composio) | | atomic agents | building ai agents, atomically. | [link](https://git"
+        },
+        {
+          "indicator": "tools",
+          "context": "-tools | a python library for converting gradio apps into tools that can be leveraged by an llm-based agent to complete its task. | [link](https://github.com/freddyaboulton/gradio-tools) | | composio | production ready toolset for ai agents. | [link](https://github.com/composiohq/composio) | | atomic agents | building ai agents, atomically. | [link](https://github.com/brainblend-ai/atomic-agents) | | memary | open source memory layer for autonomous agents. | [link](https://github."
+        },
+        {
+          "indicator": "tools",
+          "context": "g gradio apps into tools that can be leveraged by an llm-based agent to complete its task. | [link](https://github.com/freddyaboulton/gradio-tools) | | composio | production ready toolset for ai agents. | [link](https://github.com/composiohq/composio) | | atomic agents | building ai agents, atomically. | [link](https://github.com/brainblend-ai/atomic-agents) | | memary | open source memory layer for autonomous agents. | [link](https://github.com/kingjulio8238/memary) | | browser u"
+        },
+        {
+          "indicator": "tools",
+          "context": "lflow/mlflow) | | opik | an open-source end-to-end llm development platform which also includes llm monitoring. | [link](https://github.com/comet-ml/opik) | | langsmith | provides tools for logging, monitoring, and improving your llm applications. | [link](https://github.com/langchain-ai/langsmith-sdk) | | weights & biases (w&b) | w&b provides features for tracking llm performance. | [link](https://github.com/wandb) | | helicone | open source llm-observability platform for develop"
+        }
+      ]
+    },
+    {
+      "profile": "kalyanks-nlp-llm-engineer-toolkit.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "kalyanks-nlp-llm-engineer-toolkit.json",
+      "contexts": []
+    },
+    {
+      "profile": "karthikreddy-7-ai-engineering-playbook.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "karthikreddy-7-ai-engineering-playbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "karthikreddy-7-ai-engineering-playbook.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "karthikreddy-7-ai-engineering-playbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "kvsdileep-rag-for-engineers.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "kvsdileep-rag-for-engineers.json",
+      "contexts": []
+    },
+    {
+      "profile": "kvsdileep-rag-for-engineers.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "kvsdileep-rag-for-engineers.json",
+      "contexts": []
+    },
+    {
+      "profile": "kvsdileep-rag-for-engineers.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "kvsdileep-rag-for-engineers.json",
+      "contexts": []
+    },
+    {
+      "profile": "meirtz-awesome-context-engineering.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "meirtz-awesome-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "meirtz-awesome-context-engineering.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "meirtz-awesome-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "meirtz-awesome-context-engineering.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "meirtz-awesome-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "michaelliv-pi-generative-ui.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "michaelliv-pi-generative-ui.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "via window.__glimpseui.rpc(method, params). pi install npm:pi-generative-ui cross-platform — glimpse 0.8 compiles a tiny native binary on postinstall: - macos — xcode command line tools ( xcode-select --install)- linux — rust + gtk4/webkitgtk dev packages, or just use the chromium fallback (any chromium-based browser) - windows — .net 8 sdk + webview2 runtime just ask pi to visualize things. the extension adds two tools that the llm calls automatically: - \"show me how compound int"
+        },
+        {
+          "indicator": "tools",
+          "context": "tgtk dev packages, or just use the chromium fallback (any chromium-based browser) - windows — .net 8 sdk + webview2 runtime just ask pi to visualize things. the extension adds two tools that the llm calls automatically: - \"show me how compound interest works\" → interactive explainer with sliders and chart.js - \"visualize the architecture of a transformer\" → svg diagram with labeled components - \"create a dashboard for this data\" → metric cards, charts, tables - \"draw a particle sy"
+        }
+      ]
+    },
+    {
+      "profile": "michaelliv-pi-generative-ui.json",
+      "group": "engineering_signals",
+      "field": "documentation",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "michaelliv-pi-generative-ui.json",
+      "contexts": []
+    },
+    {
+      "profile": "microsoft-ai-agents-for-beginners.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "microsoft-ai-agents-for-beginners.json",
+      "contexts": []
+    },
+    {
+      "profile": "microsoft-ai-agents-for-beginners.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "microsoft-ai-agents-for-beginners.json",
+      "contexts": []
+    },
+    {
+      "profile": "microsoft-ai-agents-for-beginners.json",
+      "group": "engineering_signals",
+      "field": "testing",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "microsoft-ai-agents-for-beginners.json",
+      "contexts": []
+    },
+    {
+      "profile": "microsoft-ai-agents-for-beginners.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "microsoft-ai-agents-for-beginners.json",
+      "contexts": []
+    },
+    {
+      "profile": "microsoft-ai-agents-for-beginners.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "microsoft-ai-agents-for-beginners.json",
+      "contexts": []
+    },
+    {
+      "profile": "microsoft-ai-agents-for-beginners.json",
+      "group": "engineering_signals",
+      "field": "api_service",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "microsoft-ai-agents-for-beginners.json",
+      "contexts": []
+    },
+    {
+      "profile": "neolabhq-context-engineering-kit.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "neolabhq-context-engineering-kit.json",
+      "contexts": []
+    },
+    {
+      "profile": "neolabhq-context-engineering-kit.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "neolabhq-context-engineering-kit.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "r. even if you don't want to spend much time on this process, you can still use the plugin for complex tasks without decomposition or human verification — but you will likely need tools like ralph-loop to keep the agent running for longer. learn more about available customization options in [customization](https://neolab.gitbook.io/cek/plugins/sdd/customization). code quality framework with rules for clean architecture, solid principles, and domain-driven design patterns. how to i"
+        }
+      ]
+    },
+    {
+      "profile": "nirdiamant-prompt_engineering.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "nirdiamant-prompt_engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "nirdiamant-prompt_engineering.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "nirdiamant-prompt_engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "nirdiamant-prompt_engineering.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "nirdiamant-prompt_engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "nirdiamant-prompt_engineering.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "nirdiamant-prompt_engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "nirdiamant-prompt_engineering.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "nirdiamant-prompt_engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "ombharatiya-ai-system-design-guide.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ombharatiya-ai-system-design-guide.json",
+      "contexts": []
+    },
+    {
+      "profile": "ombharatiya-ai-system-design-guide.json",
+      "group": "engineering_signals",
+      "field": "api_service",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "ombharatiya-ai-system-design-guide.json",
+      "contexts": []
+    },
+    {
+      "profile": "packtpublishing-llm-engineers-handbook.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "packtpublishing-llm-engineers-handbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "packtpublishing-llm-engineers-handbook.json",
+      "group": "ai_capabilities",
+      "field": "agents",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "packtpublishing-llm-engineers-handbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "packtpublishing-llm-engineers-handbook.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "packtpublishing-llm-engineers-handbook.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "ackage │ ├── application/ │ ├── domain/ │ ├── infrastructure/ │ ├── model/ ├── pipelines/ # ml pipeline definitions ├── steps/ # pipeline components ├── tests/ # test examples ├── tools/ # utility scripts │ ├── run.py │ ├── ml_service.py │ ├── rag.py │ ├── data_warehouse.py llm_engineering/ is the main python package implementing llm and rag functionality. it follows domain-driven design (ddd) principles: - domain/ : core business entities and structures - application/ : business "
+        },
+        {
+          "indicator": "tools",
+          "context": " perform specific tasks (e.g., data loading, preprocessing) and can be combined within the ml pipelines. tests/: covers a few sample tests used as examples within the ci pipeline. tools/: utility scripts used to call the zenml pipelines and inference code: - run.py : entry point script to run zenml pipelines. - ml_service.py : starts the rest api inference server. - rag.py : demonstrates usage of the rag retrieval module. - data_warehouse.py : used to export or import data from th"
+        }
+      ]
+    },
+    {
+      "profile": "packtpublishing-llm-engineers-handbook.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "packtpublishing-llm-engineers-handbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "panaversity-learn-agentic-ai.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "panaversity-learn-agentic-ai.json",
+      "contexts": []
+    },
+    {
+      "profile": "panaversity-learn-agentic-ai.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "panaversity-learn-agentic-ai.json",
+      "contexts": []
+    },
+    {
+      "profile": "panaversity-learn-agentic-ai.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "panaversity-learn-agentic-ai.json",
+      "contexts": []
+    },
+    {
+      "profile": "phodal-build-agent-context-engineering.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "phodal-build-agent-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "phodal-build-agent-context-engineering.json",
+      "group": "engineering_signals",
+      "field": "testing",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "phodal-build-agent-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "phodal-build-agent-context-engineering.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "phodal-build-agent-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "phodal-build-agent-context-engineering.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "phodal-build-agent-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "rohitg00-ai-engineering-from-scratch.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "rohitg00-ai-engineering-from-scratch-source.json",
+      "contexts": []
+    },
+    {
+      "profile": "rohitg00-ai-engineering-from-scratch.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "rohitg00-ai-engineering-from-scratch-source.json",
+      "contexts": []
+    },
+    {
+      "profile": "sauravp97-ai-engineering-primer.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sauravp97-ai-engineering-primer.json",
+      "contexts": []
+    },
+    {
+      "profile": "sauravp97-ai-engineering-primer.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sauravp97-ai-engineering-primer.json",
+      "contexts": []
+    },
+    {
+      "profile": "shubhamsaboo-awesome-llm-apps.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "shubhamsaboo-awesome-llm-apps.json",
+      "contexts": []
+    },
+    {
+      "profile": "shubhamsaboo-awesome-llm-apps.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "shubhamsaboo-awesome-llm-apps.json",
+      "contexts": []
+    },
+    {
+      "profile": "slavakurilyak-awesome-ai-agents.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "slavakurilyak-awesome-ai-agents.json",
+      "contexts": []
+    },
+    {
+      "profile": "slavakurilyak-awesome-ai-agents.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "slavakurilyak-awesome-ai-agents.json",
+      "contexts": []
+    },
+    {
+      "profile": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "a curated list of awesome resources, tools, and other shiny things for gpt prompt engineering. consider giving it a ⭐️ if you like it to show your support! table of contents - [prompt engineering roadmap](https://roadmap.sh/prompt-engineering?) : step by step guide to learning prompt engineering. - [learn prompt engineering](https://learnpr"
+        },
+        {
+          "indicator": "tools",
+          "context": "ews/how-to-communicate-with-chatgpt-a-guide-to-prompt-engineering/) : a guide that explains what prompt engineering is and how you can use it to improve your communication with ai tools. - [a beginner's guide to chatgpt prompt engineering](https://www.datacamp.com/tutorial/a-beginners-guide-to-chatgpt-prompt-engineering) : a beginner-friendly guide that delves into the art and science of prompt engineering. - [a complete introduction to prompt engineering for large language models"
+        },
+        {
+          "indicator": "tools",
+          "context": "www.prompt-talent.com) : prompt engineering job offers. - [llm](https://github.com/snwfdhmp/llm) : use any llm from the command line. - [futurepedia](https://www.futurepedia.io/ai-tools) : the largest ai tools directory updated daily. - [theresanaiforthat](https://theresanaiforthat.com/s/gpt/) : the biggest ai aggregator. - [awesome-prompt-engineering](https://github.com/promptslab/awesome-prompt-engineering) - [aitreasurebox](https://github.com/superiorlu/aitreasurebox) - [ewingy"
+        },
+        {
+          "indicator": "tools",
+          "context": " prompt engineering job offers. - [llm](https://github.com/snwfdhmp/llm) : use any llm from the command line. - [futurepedia](https://www.futurepedia.io/ai-tools) : the largest ai tools directory updated daily. - [theresanaiforthat](https://theresanaiforthat.com/s/gpt/) : the biggest ai aggregator. - [awesome-prompt-engineering](https://github.com/promptslab/awesome-prompt-engineering) - [aitreasurebox](https://github.com/superiorlu/aitreasurebox) - [ewingyangs awesome-open-gpt](h"
+        }
+      ]
+    },
+    {
+      "profile": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "snwfdhmp-awesome-gpt-prompt-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "sumanth077-ai-engineering-toolkit.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sumanth077-ai-engineering-toolkit.json",
+      "contexts": []
+    },
+    {
+      "profile": "sumanth077-ai-engineering-toolkit.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sumanth077-ai-engineering-toolkit.json",
+      "contexts": []
+    },
+    {
+      "profile": "sumanth077-ai-engineering-toolkit.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sumanth077-ai-engineering-toolkit.json",
+      "contexts": []
+    },
+    {
+      "profile": "sumanth077-hands-on-ai-engineering.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sumanth077-hands-on-ai-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "sumanth077-hands-on-ai-engineering.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sumanth077-hands-on-ai-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "sylphai-inc-llm-engineer-handbook.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sylphai-inc-llm-engineer-handbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "sylphai-inc-llm-engineer-handbook.json",
+      "group": "ai_capabilities",
+      "field": "vector_database",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sylphai-inc-llm-engineer-handbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "sylphai-inc-llm-engineer-handbook.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sylphai-inc-llm-engineer-handbook.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "ou need to consider the serving and llmops to deploy the model at scale and pipelines to refresh the data. we organize the resources by (1) tracking all libraries, frameworks, and tools, (2) learning resources on the whole llm lifecycle, (3) understanding llms, (4) social accounts and community, and (5) how to contribute to this repo. build & auto-optimize - [adalflow](https://github.com/sylphai-inc/adalflow) - the library to build & auto-optimize llm applications, from chatbot, r"
+        },
+        {
+          "indicator": "tools",
+          "context": " [datasets](https://huggingface.co/docs/datasets/en/index) - a vast collection of ready-to-use datasets for machine learning tasks, including nlp, computer vision, and audio, with tools for easy access, filtering, and preprocessing. - [argilla](https://github.com/argilla-io/argilla) - a ui tool for curating and reviewing datasets for llm evaluation or training. - [distilabel](https://distilabel.argilla.io/latest/) - a library for generating synthetic datasets with llm apis or mode"
+        },
+        {
+          "indicator": "tools",
+          "context": "m/zjh-819/llmdatahub) - a quick guide (especially) for trending instruction finetuning datasets - [llm datasets](https://github.com/mlabonne/llm-datasets) - high-quality datasets, tools, and concepts for llm fine-tuning. pretraining - [ibm llms granite 3.0](https://www.linkedin.com/feed/update/urn:li:activity:7259535100927725569?updateentityurn=urn%3ali%3afs_updatev2%3a%28urn%3ali%3aactivity%3a7259535100927725569%2cfeed_detail%2cempty%2cdefault%2cfalse%29) - full list of datasets "
+        }
+      ]
+    },
+    {
+      "profile": "sylphai-inc-llm-engineer-handbook.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sylphai-inc-llm-engineer-handbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "sylphai-inc-llm-engineer-handbook.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sylphai-inc-llm-engineer-handbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "sylphai-inc-llm-engineer-handbook.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "sylphai-inc-llm-engineer-handbook.json",
+      "contexts": []
+    },
+    {
+      "profile": "thepradip-how-to-become-an-ai-engineer-in-2026.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "thepradip-how-to-become-an-ai-engineer-in-2026.json",
+      "contexts": []
+    },
+    {
+      "profile": "thepradip-how-to-become-an-ai-engineer-in-2026.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "thepradip-how-to-become-an-ai-engineer-in-2026.json",
+      "contexts": []
+    },
+    {
+      "profile": "timothywarner-org-context-engineering.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "timothywarner-org-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "timothywarner-org-context-engineering.json",
+      "group": "ai_capabilities",
+      "field": "tool_calling",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "timothywarner-org-context-engineering.json",
+      "contexts": [
+        {
+          "indicator": "tools",
+          "context": "/t; posix: lsof + sigkill) before restarting. flags: --kill-only, --port n. | segment | topic | focus | |---|---|---| | 1 | context, made visible | consumer llms hide context; dev tools (claude code, copilot) expose it | | 2 | mcp: standard for context | the protocol + a server on the official mcp sdk; current best practices | | 3 | memory tiers in a real app | warnerco's four coala tiers live; orchestration kept under the hood | | 4 | mcp in the tools you use | claude code + gith"
+        },
+        {
+          "indicator": "tools",
+          "context": " server on the official mcp sdk; current best practices | | 3 | memory tiers in a real app | warnerco's four coala tiers live; orchestration kept under the hood | | 4 | mcp in the tools you use | claude code + github copilot in vs code as context-engineering surfaces | full plan: instructor/course-plan-june-2026.md (context-first, official-sdk-first; delivered 2026-06-30). the earlier orchestration-forward plan is archived under instructor/archive/. notebooks/segment-1.ipynb throu"
+        },
+        {
+          "indicator": "tools",
+          "context": "wledge.db with 117 entities and 221 relationships across 6 predicates (has_tag, compatible_with, belongs_to_model, has_status, has_category, contains). the server registers 28 mcp tools, 12 resources, and 5 prompts. two meta-discovery tools implement progressive tool loading per anthropic's \"code execution with mcp\" guidance: - warn_search_tools(query, detail, limit) — keyword discovery with detail levelsname ,summary ,full - warn_describe_tool(name) — full schema for a single too"
+        },
+        {
+          "indicator": "tools",
+          "context": "s 6 predicates (has_tag, compatible_with, belongs_to_model, has_status, has_category, contains). the server registers 28 mcp tools, 12 resources, and 5 prompts. two meta-discovery tools implement progressive tool loading per anthropic's \"code execution with mcp\" guidance: - warn_search_tools(query, detail, limit) — keyword discovery with detail levelsname ,summary ,full - warn_describe_tool(name) — full schema for a single tool by name both meta-tools self-exclude from warn_search"
+        },
+        {
+          "indicator": "tools",
+          "context": " registers 28 mcp tools, 12 resources, and 5 prompts. two meta-discovery tools implement progressive tool loading per anthropic's \"code execution with mcp\" guidance: - warn_search_tools(query, detail, limit) — keyword discovery with detail levelsname ,summary ,full - warn_describe_tool(name) — full schema for a single tool by name both meta-tools self-exclude from warn_search_tools results, so count is up to 26 even when total is 28. clients can list tools cheaply, then pull full "
+        },
+        {
+          "indicator": "tools",
+          "context": "e: - warn_search_tools(query, detail, limit) — keyword discovery with detail levelsname ,summary ,full - warn_describe_tool(name) — full schema for a single tool by name both meta-tools self-exclude from warn_search_tools results, so count is up to 26 even when total is 28. clients can list tools cheaply, then pull full schemas only for what they actually plan to call. context-engineering/ ├── src/warnerco/backend/ # warnerco schematica (fastapi + fastmcp + langgraph) ├── labs/lab"
+        },
+        {
+          "indicator": "tools",
+          "context": ", limit) — keyword discovery with detail levelsname ,summary ,full - warn_describe_tool(name) — full schema for a single tool by name both meta-tools self-exclude from warn_search_tools results, so count is up to 26 even when total is 28. clients can list tools cheaply, then pull full schemas only for what they actually plan to call. context-engineering/ ├── src/warnerco/backend/ # warnerco schematica (fastapi + fastmcp + langgraph) ├── labs/lab-01-hello-mcp/ # lab 01: hello mcp, "
+        },
+        {
+          "indicator": "tools",
+          "context": "scribe_tool(name) — full schema for a single tool by name both meta-tools self-exclude from warn_search_tools results, so count is up to 26 even when total is 28. clients can list tools cheaply, then pull full schemas only for what they actually plan to call. context-engineering/ ├── src/warnerco/backend/ # warnerco schematica (fastapi + fastmcp + langgraph) ├── labs/lab-01-hello-mcp/ # lab 01: hello mcp, single add tool (js) ├── labs/lab-02-mcp-chat/ # lab 02: mcp client + server"
+        }
+      ]
+    },
+    {
+      "profile": "timothywarner-org-context-engineering.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "timothywarner-org-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "timothywarner-org-context-engineering.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "timothywarner-org-context-engineering.json",
+      "contexts": []
+    },
+    {
+      "profile": "vchandu111-100-ai-engineer-interview-questions.json",
+      "group": "ai_capabilities",
+      "field": "mcp",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "vchandu111-100-ai-engineer-interview-questions.json",
+      "contexts": []
+    },
+    {
+      "profile": "vchandu111-100-ai-engineer-interview-questions.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "vchandu111-100-ai-engineer-interview-questions.json",
+      "contexts": []
+    },
+    {
+      "profile": "wenyuchiou-awesome-agentic-ai-zh.json",
+      "group": "ai_capabilities",
+      "field": "embeddings",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "wenyuchiou-awesome-agentic-ai-zh.json",
+      "contexts": []
+    },
+    {
+      "profile": "wenyuchiou-awesome-agentic-ai-zh.json",
+      "group": "engineering_signals",
+      "field": "ci_cd",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "wenyuchiou-awesome-agentic-ai-zh.json",
+      "contexts": []
+    },
+    {
+      "profile": "wenyuchiou-awesome-agentic-ai-zh.json",
+      "group": "engineering_signals",
+      "field": "docker",
+      "value": "true",
+      "reason": "true output has no matching lexical indicator in evidence",
+      "evidence_found": true,
+      "evidence_file": "wenyuchiou-awesome-agentic-ai-zh.json",
+      "contexts": []
+    }
+  ]
+}

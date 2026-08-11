@@ -1,0 +1,9 @@
+{
+  "evidence_id": "azure-pyrit",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/Azure/PyRIT",
+  "source_type": "github_repository",
+  "evidence_text": "GitHub - Azure/PyRIT: The Python Risk Identification Tool for generative AI (PyRIT) is an open source framework built to empower security professionals and engineers to proactively identify risks in generative AI systems. · GitHub\nYou signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert\nPython Risk Identification Tool for generative AI (PyRIT)\nThe Python Risk Identification Tool for generative AI (PyRIT) is an open source\nframework built to empower security professionals and engineers to proactively\nidentify risks in generative AI systems.\nThe Python Risk Identification Tool for generative AI (PyRIT) is an open source framework built to empower security professionals and engineers to proactively identify risks in generative AI systems.",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:45:40.297500Z"
+}

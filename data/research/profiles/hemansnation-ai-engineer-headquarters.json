@@ -1,0 +1,27 @@
+{
+  "profile_id": "hemansnation-ai-engineer-headquarters",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/hemansnation/AI-Engineer-Headquarters",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "unknown",
+      "rag": "unknown",
+      "embeddings": "unknown",
+      "vector_database": "unknown",
+      "agents": "unknown",
+      "tool_calling": "unknown",
+      "mcp": "unknown"
+    },
+    "engineering_signals": {
+      "testing": "unknown",
+      "ci_cd": "unknown",
+      "docker": "unknown",
+      "api_service": "unknown",
+      "documentation": "unknown"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:44:52.892513Z",
+  "processed_at": "2026-08-11T14:02:07.326374+00:00"
+}

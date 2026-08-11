@@ -1,0 +1,9 @@
+{
+  "evidence_id": "microsoftlearning-ai-102-aiengineer",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/MicrosoftLearning/AI-102-AIEngineer",
+  "source_type": "github_repository",
+  "evidence_text": "DEPRECATED This repo is no longer supported. The lab files for course AI-102 (and other AI-related courses) are distributed across multiple repo's: https://github.com/MicrosoftLearning/mslearn-ai-services https://github.com/MicrosoftLearning/mslearn-ai-vision https://github.com/MicrosoftLearning/mslearn-ai-language https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence https://github.com/MicrosoftLearning/mslearn-knowledge-mining https://github.com/MicrosoftLearning/mslearn-openai",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:44:54.183738Z"
+}

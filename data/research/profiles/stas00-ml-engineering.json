@@ -1,0 +1,27 @@
+{
+  "profile_id": "stas00-ml-engineering",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/stas00/ml-engineering",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "unknown",
+      "rag": "unknown",
+      "embeddings": "unknown",
+      "vector_database": "unknown",
+      "agents": "unknown",
+      "tool_calling": "unknown",
+      "mcp": "unknown"
+    },
+    "engineering_signals": {
+      "testing": "unknown",
+      "ci_cd": "unknown",
+      "docker": "unknown",
+      "api_service": "unknown",
+      "documentation": "unknown"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:45:14.387099Z",
+  "processed_at": "2026-08-11T14:11:32.571015+00:00"
+}

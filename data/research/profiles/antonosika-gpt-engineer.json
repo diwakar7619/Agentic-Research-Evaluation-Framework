@@ -1,0 +1,27 @@
+{
+  "profile_id": "antonosika-gpt-engineer",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/AntonOsika/gpt-engineer",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "true",
+      "rag": "unknown",
+      "embeddings": "unknown",
+      "vector_database": "unknown",
+      "agents": "true",
+      "tool_calling": "true",
+      "mcp": "unknown"
+    },
+    "engineering_signals": {
+      "testing": "unknown",
+      "ci_cd": "unknown",
+      "docker": "true",
+      "api_service": "unknown",
+      "documentation": "true"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:44:47.987182Z",
+  "processed_at": "2026-08-11T13:52:39.385412+00:00"
+}

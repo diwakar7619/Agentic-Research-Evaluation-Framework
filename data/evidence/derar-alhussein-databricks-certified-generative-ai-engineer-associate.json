@@ -1,0 +1,9 @@
+{
+  "evidence_id": "derar-alhussein-databricks-certified-generative-ai-engineer-associate",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/derar-alhussein/Databricks-Certified-Generative-AI-Engineer-Associate",
+  "source_type": "github_repository",
+  "evidence_text": "Databricks Certified Generative AI Engineer Associate This repository contains the resources of the preparation course for the Databricks Generative AI Engineer Associate certification exam on Udemy: https://www.udemy.com/course/databricks-certified-genai-engineer-associate/?referralCode=855CFC7018612506EFBF",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:45:52.655974Z"
+}

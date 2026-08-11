@@ -1,0 +1,27 @@
+{
+  "profile_id": "alibaba-spring-ai-alibaba",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/alibaba/spring-ai-alibaba",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "unknown",
+      "rag": "unknown",
+      "embeddings": "unknown",
+      "vector_database": "unknown",
+      "agents": "unknown",
+      "tool_calling": "unknown",
+      "mcp": "unknown"
+    },
+    "engineering_signals": {
+      "testing": "unknown",
+      "ci_cd": "unknown",
+      "docker": "unknown",
+      "api_service": "unknown",
+      "documentation": "unknown"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:47:10.204220Z",
+  "processed_at": "2026-08-11T13:52:04.038221+00:00"
+}

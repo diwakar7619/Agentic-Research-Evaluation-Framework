@@ -1,0 +1,27 @@
+{
+  "profile_id": "joshithreddyaleti-ai_engineer_interview_prep",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/JoshithReddyAleti/AI_Engineer_Interview_Prep",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "unknown",
+      "rag": "unknown",
+      "embeddings": "unknown",
+      "vector_database": "unknown",
+      "agents": "unknown",
+      "tool_calling": "unknown",
+      "mcp": "unknown"
+    },
+    "engineering_signals": {
+      "testing": "unknown",
+      "ci_cd": "unknown",
+      "docker": "unknown",
+      "api_service": "unknown",
+      "documentation": "unknown"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:46:44.269296Z",
+  "processed_at": "2026-08-11T14:02:51.601794+00:00"
+}

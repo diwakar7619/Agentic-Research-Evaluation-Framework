@@ -1,0 +1,64 @@
+{
+  "total_files": 121,
+  "batch_profiles": 120,
+  "seed_profiles": 1,
+  "valid": 120,
+  "invalid": 0,
+  "failures": [],
+  "value_distribution": {
+    "ai_capabilities": {
+      "llm_application": {
+        "unknown": 82,
+        "true": 38
+      },
+      "rag": {
+        "unknown": 85,
+        "true": 35
+      },
+      "embeddings": {
+        "unknown": 87,
+        "true": 33
+      },
+      "vector_database": {
+        "unknown": 87,
+        "true": 33
+      },
+      "agents": {
+        "unknown": 83,
+        "true": 37
+      },
+      "tool_calling": {
+        "unknown": 82,
+        "true": 38
+      },
+      "mcp": {
+        "unknown": 85,
+        "true": 35
+      }
+    },
+    "engineering_signals": {
+      "testing": {
+        "unknown": 86,
+        "true": 34
+      },
+      "ci_cd": {
+        "unknown": 87,
+        "true": 33
+      },
+      "docker": {
+        "unknown": 84,
+        "true": 35,
+        "false": 1
+      },
+      "api_service": {
+        "unknown": 84,
+        "true": 35,
+        "false": 1
+      },
+      "documentation": {
+        "unknown": 82,
+        "true": 38
+      }
+    }
+  }
+}

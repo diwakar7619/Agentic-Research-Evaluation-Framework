@@ -1,0 +1,27 @@
+{
+  "profile_id": "michaelliv-pi-generative-ui",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/Michaelliv/pi-generative-ui",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "true",
+      "rag": "unknown",
+      "embeddings": "unknown",
+      "vector_database": "unknown",
+      "agents": "unknown",
+      "tool_calling": "true",
+      "mcp": "unknown"
+    },
+    "engineering_signals": {
+      "testing": "true",
+      "ci_cd": "unknown",
+      "docker": "unknown",
+      "api_service": "unknown",
+      "documentation": "true"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:45:27.144605Z",
+  "processed_at": "2026-08-11T14:04:50.263076+00:00"
+}

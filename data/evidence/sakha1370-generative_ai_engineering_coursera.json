@@ -1,0 +1,9 @@
+{
+  "evidence_id": "sakha1370-generative_ai_engineering_coursera",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/sakha1370/Generative_AI_Engineering_Coursera",
+  "source_type": "github_repository",
+  "evidence_text": "You signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert\nThis repository features my coursework from the IBM Generative AI Engineering Professional Certificate on Coursera. It includes Jupyter Notebooks with code, explanations, and visualizations, along with HTML/PDF summaries. The content highlights my skills in Generative AI, LLMs, NLP, and model optimization.",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:45:30.618922Z"
+}

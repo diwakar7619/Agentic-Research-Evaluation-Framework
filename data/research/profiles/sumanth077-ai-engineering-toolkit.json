@@ -1,0 +1,27 @@
+{
+  "profile_id": "sumanth077-ai-engineering-toolkit",
+  "source_type": "github_repository",
+  "source_url": "https://github.com/Sumanth077/ai-engineering-toolkit",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "confidence": "high",
+  "extracted": {
+    "ai_capabilities": {
+      "llm_application": "true",
+      "rag": "true",
+      "embeddings": "true",
+      "vector_database": "true",
+      "agents": "true",
+      "tool_calling": "true",
+      "mcp": "true"
+    },
+    "engineering_signals": {
+      "testing": "true",
+      "ci_cd": "true",
+      "docker": "true",
+      "api_service": "true",
+      "documentation": "true"
+    }
+  },
+  "retrieved_at": "2026-08-11T13:44:55.348471Z",
+  "processed_at": "2026-08-11T14:11:47.039438+00:00"
+}

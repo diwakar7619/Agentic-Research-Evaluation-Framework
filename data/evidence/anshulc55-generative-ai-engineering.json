@@ -1,0 +1,9 @@
+{
+  "evidence_id": "anshulc55-generative-ai-engineering",
+  "claim": "The GitHub repository page contains publicly accessible project and AI-engineering information.",
+  "source_url": "https://github.com/anshulc55/Generative-AI-Engineering",
+  "source_type": "github_repository",
+  "evidence_text": "This repository contains the official codebase for the course\nGenerative AI Engineer Mastery: LLM, RAG & Agentic AI.\nThis is not a collection of random notebooks or demos.\nIt is a structured, production-oriented learning repository designed to help you think and work like a real Generative AI Engineer.\nThis repository is a guided engineering workspace that supports the course by providing:\n- Clean, readable, and production-inspired code\n- Incremental builds instead of one-off scripts\n- Multiple approaches to the same problem (trade-offs matter)\n- Reusable modules instead of throwaway code\n- Realistic AI system architectures\nYou will not start from a blank screen.\nYou will learn by reading, modifying, extending, and reasoning about real systems.\n- ❌ Not a prompt collection\n- ❌ Not copy-paste snippets without context\n- ❌ Not a “magic wrapper” around APIs\n- ❌ Not framework hype\nThis repo exists to teach engineering judgment, not shortcuts.\n- Watch the lecture first\n  - Understand why the system exists\n- Read the code\n  - Before running it\n- Run the code\n  - Observe behavior, cost, latency, failures\n- Modify the code\n  - Change models, parameters, chunking, prompts\n- Break the system\n  - This is where real learning happens\nIf you only run the code without thinking, you will miss the point.",
+  "confidence": "high",
+  "retrieved_at": "2026-08-11T13:45:39.180659Z"
+}
