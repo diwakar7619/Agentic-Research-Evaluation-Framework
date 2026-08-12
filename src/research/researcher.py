@@ -5,7 +5,6 @@ from typing import Any
 
 from .execution import ResearchExecutionResult
 from .executor import ResearchExecutor
-from .ollama import OllamaProvider
 from .planner import ResearchPlanner
 from .store import ResearchStore
 from .synthesizer import ResearchSynthesizer
@@ -49,24 +48,6 @@ class Researcher:
         self.executor = executor
         self.synthesizer = synthesizer
         self.store = store
-
-    @classmethod
-    def with_local_qwen(
-        cls,
-        *,
-        store: ResearchStore | None = None,
-        model: str = "qwen3:4b",
-    ) -> "Researcher":
-        provider = OllamaProvider(model=model)
-
-        return cls(
-            planner=ResearchPlanner(provider),
-            executor=ResearchExecutor(
-                runner=None,
-            ),
-            synthesizer=ResearchSynthesizer(provider),
-            store=store or ResearchStore(),
-        )
 
     def run(
         self,
