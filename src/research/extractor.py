@@ -82,3 +82,62 @@ def extract_profile(
     record.validate()
 
     return record
+
+class EvidenceExtractor:
+    """
+    Generic extraction adapter.
+
+    This sits above the existing extract_profile() contract.
+    The underlying LLM implementation remains replaceable.
+    """
+
+    def extract(
+        self,
+        *,
+        question: str,
+        evidence,
+        schema: dict,
+    ) -> dict:
+        from extraction.qwen import extract_json
+
+        if not question.strip():
+            raise ValueError(
+                "question is required."
+            )
+
+        if not evidence:
+            raise ValueError(
+                "evidence is required."
+            )
+
+        evidence_text = "\n\n".join(
+            getattr(item, "text", str(item))
+            for item in evidence
+        )
+
+        prompt = f"""
+You are an evidence-based research extraction system.
+
+Research question:
+{question}
+
+Analyze ONLY the supplied evidence.
+
+Return ONLY the JSON object required by the supplied schema.
+
+Rules:
+- Use only the supplied evidence.
+- Do not use outside knowledge.
+- Do not guess.
+- Use "unknown" when evidence is insufficient.
+- Do not add fields.
+- Do not return explanations.
+
+Evidence:
+{evidence_text}
+"""
+
+        return extract_json(
+            prompt,
+            response_schema=schema,
+        )
