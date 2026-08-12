@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.15.0",
+    "crawlee[adaptive-crawler,beautifulsoup,parsel,playwright]>=1.9.1",
     "ddgs>=9.14.4",
     "httpx>=0.28.1",
     "lxml>=6.1.1",

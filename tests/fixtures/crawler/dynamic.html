@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dynamic Research Fixture</title>
+</head>
+<body>
+    <h1>Dynamic Fixture</h1>
+
+    <div id="loading">
+        Loading research content...
+    </div>
+
+    <script>
+        window.setTimeout(function () {
+            const loading = document.getElementById("loading");
+
+            const app = document.createElement("div");
+            app.id = "app";
+            app.textContent =
+                "Dynamic JavaScript research content loaded successfully.";
+
+            loading.replaceWith(app);
+        }, 100);
+    </script>
+</body>
+</html>
