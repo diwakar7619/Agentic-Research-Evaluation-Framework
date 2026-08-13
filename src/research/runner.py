@@ -51,10 +51,20 @@ class ResearchRunner:
 
         for candidate in allowed:
 
-            collected.append(
-                self.collector.collect(
+            try:
+                source = self.collector.collect(
                     candidate
                 )
+            except Exception:
+                # A single inaccessible source must not
+                # invalidate otherwise usable research.
+                continue
+
+            collected.append(source)
+
+        if not collected:
+            raise ValueError(
+                "No sources were collected."
             )
 
         evidence = tuple(

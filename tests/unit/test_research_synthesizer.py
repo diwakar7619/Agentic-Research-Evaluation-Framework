@@ -126,6 +126,77 @@ def test_synthesizer_builds_grounded_result():
     assert result.claims[0].support_status == "corroborated"
 
 
+def test_synthesizer_marks_multiple_web_sources_as_corroborated():
+    execution = make_execution()
+
+    web_step = execution.steps[0]
+
+    existing_result = web_step.result
+
+    assert existing_result is not None
+
+    second_web_evidence = ResearchEvidence(
+        source_id="web-2",
+        source_url="https://example.org",
+        text="Independent web evidence.",
+    )
+
+    updated_result = ResearchResult(
+        question=existing_result.question,
+        answer=existing_result.answer,
+        evidence=(
+            *existing_result.evidence,
+            second_web_evidence,
+        ),
+        sources_considered=2,
+        sources_collected=2,
+    )
+
+    execution = ResearchExecutionResult(
+        question=execution.question,
+        steps=(
+            StepExecution(
+                step=web_step.step,
+                status=web_step.status,
+                attempts=web_step.attempts,
+                result=updated_result,
+            ),
+            execution.steps[1],
+        ),
+        completed_steps=execution.completed_steps,
+        failed_steps=execution.failed_steps,
+    )
+
+    provider = FakeProvider(
+        {
+            "answer": "The evidence shows an AI system.",
+            "claims": [
+                {
+                    "claim_id": "claim-1",
+                    "text": (
+                        "The system has documented "
+                        "AI-related implementation."
+                    ),
+                    "evidence_ids": [
+                        "web-1",
+                        "web-2",
+                    ],
+                },
+            ],
+        }
+    )
+
+    result = ResearchSynthesizer(
+        provider=provider,
+    ).synthesize(
+        execution
+    )
+
+    assert result.claims[0].support_status == (
+        "corroborated"
+    )
+
+
 def test_synthesizer_rejects_unknown_evidence():
     provider = FakeProvider(
         {
@@ -172,6 +243,99 @@ def test_synthesizer_rejects_empty_answer():
         raise AssertionError(
             "Expected empty answer to fail."
         )
+
+
+def test_synthesizer_retries_after_meta_answer():
+    class SequenceProvider:
+        def __init__(self):
+            self.responses = [
+                {
+                    "answer": (
+                        "The user has provided a research request."
+                    ),
+                    "claims": [],
+                },
+                {
+                    "answer": (
+                        "The evidence describes an AI system."
+                    ),
+                    "claims": [
+                        {
+                            "claim_id": "claim-1",
+                            "text": (
+                                "The system has documented "
+                                "AI-related implementation."
+                            ),
+                            "evidence_ids": [
+                                "web-1",
+                            ],
+                        },
+                    ],
+                },
+            ]
+            self.calls = 0
+
+        def generate_json(
+            self,
+            *,
+            prompt,
+            schema,
+        ):
+            self.calls += 1
+            return self.responses.pop(0)
+
+    provider = SequenceProvider()
+
+    result = ResearchSynthesizer(
+        provider=provider,
+        max_quality_retries=1,
+    ).synthesize(
+        make_execution()
+    )
+
+    assert provider.calls == 2
+    assert result.answer.startswith(
+        "The evidence"
+    )
+
+
+def test_synthesizer_stops_after_bounded_quality_retry():
+    class SequenceProvider:
+        def __init__(self):
+            self.calls = 0
+
+        def generate_json(
+            self,
+            *,
+            prompt,
+            schema,
+        ):
+            self.calls += 1
+
+            return {
+                "answer": (
+                    "The user has provided a research request."
+                ),
+                "claims": [],
+            }
+
+    provider = SequenceProvider()
+
+    try:
+        ResearchSynthesizer(
+            provider=provider,
+            max_quality_retries=1,
+        ).synthesize(
+            make_execution()
+        )
+    except ValueError as exc:
+        assert "meta" in str(exc).lower()
+    else:
+        raise AssertionError(
+            "Expected bounded quality retry to fail."
+        )
+
+    assert provider.calls == 2
 
 
 def test_synthesizer_rejects_missing_evidence():
