@@ -4,42 +4,54 @@ from typing import Any
 
 from research.plan import ResearchPlan, ResearchStep
 from research.task import ResearchTask
+from research.performance import ResearchPerformance
 
 
-PLAN_SCHEMA: dict[str, Any] = {
-    "type": "object",
-    "properties": {
-        "steps": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {"type": "string"},
-                    "question": {"type": "string"},
-                    "source_types": {
-                        "type": "array",
-                        "items": {"type": "string"},
+def _build_plan_schema(
+    allowed_source_types: tuple[str, ...],
+) -> dict[str, Any]:
+    allowed = list(dict.fromkeys(allowed_source_types))
+
+    if not allowed:
+        raise ValueError("At least one allowed source type is required.")
+
+    return {
+        "type": "object",
+        "properties": {
+            "steps": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {"type": "string"},
+                        "question": {"type": "string"},
+                        "source_types": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": allowed,
+                            },
+                        },
+                        "expected_evidence": {"type": "string"},
+                        "priority": {
+                            "type": "integer",
+                            "minimum": 1,
+                        },
                     },
-                    "expected_evidence": {"type": "string"},
-                    "priority": {
-                        "type": "integer",
-                        "minimum": 1,
-                    },
+                    "required": [
+                        "id",
+                        "question",
+                        "source_types",
+                        "expected_evidence",
+                        "priority",
+                    ],
+                    "additionalProperties": False,
                 },
-                "required": [
-                    "id",
-                    "question",
-                    "source_types",
-                    "expected_evidence",
-                    "priority",
-                ],
-                "additionalProperties": False,
             },
-        }
-    },
-    "required": ["steps"],
-    "additionalProperties": False,
-}
+        },
+        "required": ["steps"],
+        "additionalProperties": False,
+    }
 
 
 class ResearchPlanner:
@@ -62,12 +74,18 @@ class ResearchPlanner:
         self.provider = provider
         self.max_steps = max_steps
 
-    def plan(self, task: ResearchTask) -> ResearchPlan:
+    def plan(
+        self,
+        task: ResearchTask,
+        *,
+        performance: ResearchPerformance | None = None,
+    ) -> ResearchPlan:
         task.validate()
 
         raw = self.provider.generate_json(
             prompt=self._build_prompt(task),
-            schema=PLAN_SCHEMA,
+            schema=_build_plan_schema(task.source_types),
+            performance=performance,
         )
 
         plan = self._parse_plan(
@@ -155,6 +173,19 @@ class ResearchPlanner:
                     + ", ".join(invalid_sources)
                 )
 
+            step_question = str(
+                item.get(
+                    "question",
+                    "",
+                )
+            ).strip()
+
+            if not step_question:
+                raise ValueError(
+                    f"Planner step {index} has an empty question."
+                )
+
+
             steps.append(
                 ResearchStep(
                     id=str(
@@ -163,12 +194,7 @@ class ResearchPlanner:
                             f"step-{index}",
                         )
                     ),
-                    question=str(
-                        item.get(
-                            "question",
-                            "",
-                        )
-                    ),
+                    question=step_question,
                     source_types=source_types,
                     expected_evidence=str(
                         item.get(

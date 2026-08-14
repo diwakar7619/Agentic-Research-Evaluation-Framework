@@ -54,7 +54,10 @@ class SlowCollector:
                 source_type=candidate.source_type,
                 title=candidate.title,
                 url=candidate.url,
-                content=f"content-{candidate.source_id}",
+                content=(
+                    "Test research evidence for "
+                    f"{candidate.source_id}."
+                ),
                 metadata={},
             )
         finally:

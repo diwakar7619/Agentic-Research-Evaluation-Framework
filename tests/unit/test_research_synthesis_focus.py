@@ -7,7 +7,13 @@ class CaptureProvider:
         self.prompt = None
         self.schema = None
 
-    def generate_json(self, *, prompt, schema):
+    def generate_json(
+        self,
+        *,
+        prompt,
+        schema,
+        performance=None,
+    ):
         self.prompt = prompt
         self.schema = schema
 

@@ -9,7 +9,13 @@ class FakeProvider:
         self.prompt = None
         self.schema = None
 
-    def generate_json(self, *, prompt, schema):
+    def generate_json(
+        self,
+        *,
+        prompt,
+        schema,
+        performance=None,
+    ):
         self.prompt = prompt
         self.schema = schema
         return self.response
@@ -115,3 +121,50 @@ def test_plan_rejects_duplicate_ids():
         raise AssertionError(
             "Expected duplicate IDs to fail."
         )
+def test_planner_uses_normalized_step_question():
+    provider = FakeProvider(
+        {
+            "steps": [
+                {
+                    "id": "step-1",
+                    "question": "  Find the retrieval implementation.  ",
+                    "source_types": ["github_repository"],
+                    "expected_evidence": "Retriever implementation.",
+                    "priority": 1,
+                }
+            ]
+        }
+    )
+
+    planner = ResearchPlanner(provider)
+    plan = planner.plan(make_task())
+
+    assert plan.steps[0].question == "Find the retrieval implementation."
+
+
+def test_planner_schema_restricts_source_types():
+    provider = FakeProvider(
+        {
+            "steps": [
+                {
+                    "id": "step-1",
+                    "question": "Find the retrieval implementation.",
+                    "source_types": ["github_repository"],
+                    "expected_evidence": "Retriever implementation.",
+                    "priority": 1,
+                }
+            ]
+        }
+    )
+
+    planner = ResearchPlanner(provider)
+    planner.plan(make_task())
+
+    schema = provider.schema
+    allowed = (
+        schema["properties"]["steps"]
+        ["items"]["properties"]["source_types"]
+        ["items"]["enum"]
+    )
+
+    assert allowed == ["github_repository", "web"]

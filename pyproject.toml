@@ -16,4 +16,6 @@ dependencies = [
     "trafilatura>=2.2.0",
 ]
 [tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = ["data", ".git", ".venv", "venv", "__pycache__"]
 pythonpath = ["src"]

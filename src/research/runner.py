@@ -1,6 +1,9 @@
+from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
+import json
 from dataclasses import dataclass
 
+from .alignment import alignment_score
 from .result import (
     ResearchEvidence,
     ResearchResult,
@@ -10,6 +13,7 @@ from .source import (
     SourceDiscoverer,
 )
 from .task import ResearchTask
+from .telemetry import ResearchTelemetry
 from .validator import ResearchValidator
 
 
@@ -28,6 +32,22 @@ class ResearchRunner:
 
         task.validate()
 
+        run_id = str(
+            task.metadata.get(
+                "run_id",
+                "research-run",
+            )
+        )
+
+        telemetry = ResearchTelemetry(
+            run_id=run_id,
+        )
+
+        telemetry.increment(
+            "evidence_alignment_rejected",
+            0,
+        )
+
         max_sources = int(
             task.metadata.get(
                 "max_sources",
@@ -38,6 +58,11 @@ class ResearchRunner:
         candidates = self.discoverer.discover(
             task.question,
             limit=max_sources,
+        )
+
+        telemetry.increment(
+            "sources_discovered",
+            len(candidates),
         )
 
         allowed = [
@@ -102,21 +127,53 @@ class ResearchRunner:
                 "No sources were collected."
             )
 
-        evidence = tuple(
-            ResearchEvidence(
-                source_id=source.source_id,
-                source_url=source.url,
-                text=source.content,
-            )
-            for source in collected
-            if source.content.strip()
+        telemetry.increment(
+            "sources_collected",
+            len(collected),
         )
 
-        answer = self.extractor.extract(
-            question=task.question,
-            evidence=evidence,
-            schema=task.extraction_schema,
-        )
+        relevant_evidence = []
+
+        for source in collected:
+            content = source.content.strip()
+
+            if not content:
+                continue
+
+            relevance = alignment_score(
+                task.question,
+                content,
+            )
+
+            # Preserve recall when only one source was collected.
+            # When multiple sources are available, reject sources
+            # with zero lexical alignment before extraction.
+            if (
+                len(collected) > 1
+                and relevance <= 0.0
+            ):
+                telemetry.increment(
+                    "evidence_alignment_rejected",
+                )
+                continue
+
+            relevant_evidence.append(
+                ResearchEvidence(
+                    source_id=source.source_id,
+                    source_url=source.url,
+                    text=content,
+                    relevance=relevance,
+                )
+            )
+
+        evidence = tuple(relevant_evidence)
+
+        with telemetry.stage("extraction"):
+            answer = self.extractor.extract(
+                question=task.question,
+                evidence=evidence,
+                schema=task.extraction_schema,
+            )
 
         result = ResearchResult(
             question=task.question,
@@ -130,6 +187,33 @@ class ResearchRunner:
             ),
         )
 
-        return self.validator.validate(
+        validated = self.validator.validate(
             result
         )
+
+        telemetry_dir = task.metadata.get(
+            "telemetry_dir"
+        )
+
+        if telemetry_dir:
+            output_dir = Path(str(telemetry_dir))
+            output_dir.mkdir(
+                parents=True,
+                exist_ok=True,
+            )
+
+            output_path = (
+                output_dir
+                / f"{run_id}.json"
+            )
+
+            output_path.write_text(
+                json.dumps(
+                    telemetry.summary(),
+                    indent=2,
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+        return validated

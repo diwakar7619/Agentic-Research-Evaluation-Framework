@@ -46,7 +46,7 @@ def build_daily_researcher(
     provider = OllamaProvider(
         model=model,
         timeout_seconds=120,
-        max_output_tokens=768,
+        max_output_tokens=4096,
     )
 
     discoverer = DDGSWebDiscoverer(

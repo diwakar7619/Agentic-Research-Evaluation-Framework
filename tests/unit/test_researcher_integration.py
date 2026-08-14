@@ -16,7 +16,16 @@ from research.result import (
 
 
 class FakePlanner:
-    def plan(self, task):
+    def __init__(self):
+        self.performance = None
+
+    def plan(
+        self,
+        task,
+        *,
+        performance=None,
+    ):
+        self.performance = performance
         return "fake-plan"
 
 
@@ -79,7 +88,16 @@ class FakeExecutor:
 
 
 class FakeSynthesizer:
-    def synthesize(self, execution):
+    def __init__(self):
+        self.performance = None
+
+    def synthesize(
+        self,
+        execution,
+        *,
+        performance=None,
+    ):
+        self.performance = performance
         from research.synthesis import (
             ResearchSynthesis,
             SynthesisClaim,
@@ -135,10 +153,13 @@ def test_unified_researcher_pipeline():
 
     store = FakeStore()
 
+    planner = FakePlanner()
+    synthesizer = FakeSynthesizer()
+
     researcher = Researcher(
-        planner=FakePlanner(),
+        planner=planner,
         executor=FakeExecutor(),
-        synthesizer=FakeSynthesizer(),
+        synthesizer=synthesizer,
         store=store,
     )
 
@@ -156,6 +177,9 @@ def test_unified_researcher_pipeline():
     assert report.question == task.question
 
     assert report.execution.completed_steps == 1
+
+    assert planner.performance is not None
+    assert synthesizer.performance is planner.performance
 
     assert report.synthesis.answer == (
         "Integration succeeded."

@@ -25,6 +25,7 @@ class FakeProvider:
         *,
         prompt,
         schema,
+        performance=None,
     ):
         self.prompt = prompt
         self.schema = schema
@@ -280,6 +281,7 @@ def test_synthesizer_retries_after_meta_answer():
             *,
             prompt,
             schema,
+            performance=None,
         ):
             self.calls += 1
             return self.responses.pop(0)
@@ -309,6 +311,7 @@ def test_synthesizer_stops_after_bounded_quality_retry():
             *,
             prompt,
             schema,
+            performance=None,
         ):
             self.calls += 1
 

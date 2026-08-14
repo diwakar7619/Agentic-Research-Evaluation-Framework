@@ -7,6 +7,7 @@ from typing import Any
 import httpx
 
 from .performance import ResearchPerformance
+from .observability import current_run
 
 
 class OllamaProvider:
@@ -26,7 +27,8 @@ class OllamaProvider:
         model: str = "qwen3:4b",
         base_url: str = "http://127.0.0.1:11434",
         timeout_seconds: float = 120.0,
-        max_output_tokens: int = 768,
+        max_output_tokens: int = 4096,
+        max_prompt_characters: int = 24000,
         keep_alive: str | int = "10m",
         num_ctx: int | None = None,
         performance: ResearchPerformance | None = None,
@@ -34,6 +36,11 @@ class OllamaProvider:
         if timeout_seconds <= 0:
             raise ValueError(
                 "timeout_seconds must be greater than zero."
+            )
+
+        if max_prompt_characters < 1000:
+            raise ValueError(
+                "max_prompt_characters must be >= 1000."
             )
 
         if max_output_tokens < 1:
@@ -50,6 +57,7 @@ class OllamaProvider:
         self.base_url = base_url.rstrip("/")
         self.timeout_seconds = timeout_seconds
         self.max_output_tokens = max_output_tokens
+        self.max_prompt_characters = max_prompt_characters
         self.keep_alive = keep_alive
         self.num_ctx = num_ctx
         self.performance = performance
@@ -74,11 +82,17 @@ class OllamaProvider:
         *,
         prompt: str,
         schema: dict[str, Any],
+        performance: ResearchPerformance | None = None,
     ) -> dict[str, Any]:
 
         if not prompt.strip():
             raise ValueError(
                 "prompt is required."
+            )
+
+        if len(prompt) > self.max_prompt_characters:
+            raise ValueError(
+                f"Prompt exceeds safety budget: {len(prompt)} > {self.max_prompt_characters} characters."
             )
 
         if not isinstance(schema, dict):
@@ -164,7 +178,11 @@ class OllamaProvider:
                 "Ollama JSON response must be an object."
             )
 
-        performance = self.performance
+        performance = (
+            performance
+            if performance is not None
+            else self.performance
+        )
 
         if performance is not None:
 

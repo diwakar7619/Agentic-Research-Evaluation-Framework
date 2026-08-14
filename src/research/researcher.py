@@ -69,7 +69,10 @@ class Researcher:
             performance,
             "planning",
         ):
-            plan = self.planner.plan(task)
+            plan = self.planner.plan(
+                task,
+                performance=performance,
+            )
 
         with PerformanceTimer(
             performance,
@@ -86,6 +89,7 @@ class Researcher:
         ):
             synthesis = self.synthesizer.synthesize(
                 execution,
+                performance=performance,
             )
 
         performance.sources_considered = sum(

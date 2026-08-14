@@ -6,6 +6,13 @@ from dataclasses import dataclass, field
 from typing import Any
 
 from research.execution import ResearchExecutionResult
+from research.performance import ResearchPerformance
+
+from research.evidence_packet import (
+    build_evidence_packet,
+    render_evidence_packet,
+)
+from research.alignment import require_alignment
 from research.synthesis import (
     ResearchSynthesis,
     SynthesisClaim,
@@ -85,6 +92,8 @@ class ResearchSynthesizer:
     def synthesize(
         self,
         execution: ResearchExecutionResult,
+        *,
+        performance: ResearchPerformance | None = None,
     ) -> ResearchSynthesis:
         execution.validate()
 
@@ -103,7 +112,6 @@ class ResearchSynthesizer:
                 evidence_map[evidence.source_id] = {
                     "source_id": evidence.source_id,
                     "source_url": evidence.source_url,
-                    "text": evidence.text,
                 }
 
         if not evidence_map:
@@ -111,14 +119,57 @@ class ResearchSynthesizer:
                 "Cannot synthesize research without evidence."
             )
 
-        evidence_block = "\n\n".join(
-            (
-                f"EVIDENCE_ID: {item['source_id']}\n"
-                f"SOURCE: {item['source_url']}\n"
-                f"TEXT:\n{item['text']}"
+        # Final synthesis consumes the compact structured extraction
+        # produced by the research step, not the raw evidence corpus.
+        #
+        # Raw evidence remains available through execution for
+        # provenance and deterministic evidence-ID validation below.
+        extraction_records: list[dict[str, object]] = []
+
+        for step_execution in execution.steps:
+            if step_execution.result is None:
+                continue
+
+            result = step_execution.result
+
+            source_ids = tuple(
+                evidence.source_id
+                for evidence in result.evidence
+                if evidence.source_id in evidence_map
             )
-            for item in evidence_map.values()
+
+            if not source_ids:
+                continue
+
+            extraction_records.append(
+                {
+                    "source_ids": source_ids,
+                    "source_urls": tuple(
+                        evidence_map[source_id]["source_url"]
+                        for source_id in source_ids
+                    ),
+                    "extracted": result.answer,
+                }
+            )
+
+        if not extraction_records:
+            raise ValueError(
+                "Cannot synthesize research without extracted findings."
+            )
+
+        evidence_block = json.dumps(
+            extraction_records,
+            ensure_ascii=False,
+            default=str,
+            separators=(",", ":"),
         )
+
+        if len(evidence_block) > 20_000:
+            raise ValueError(
+                "Extracted synthesis packet exceeded synthesis "
+                "budget: "
+                f"{len(evidence_block)} characters."
+            )
 
         prompt = f"""
 You are a research synthesis component.
@@ -186,6 +237,7 @@ Evidence:
             raw = self.provider.generate_json(
                 prompt=current_prompt,
                 schema=synthesis_schema,
+                performance=performance,
             )
 
             if not isinstance(raw, dict):

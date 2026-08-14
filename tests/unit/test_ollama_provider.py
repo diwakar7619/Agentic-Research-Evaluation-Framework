@@ -6,7 +6,7 @@ def test_ollama_provider_defaults_are_bounded():
 
     assert provider.model == "qwen3:4b"
     assert provider.timeout_seconds == 120.0
-    assert provider.max_output_tokens == 768
+    assert provider.max_output_tokens == 4096
 
 
 def test_ollama_provider_rejects_invalid_limits():
