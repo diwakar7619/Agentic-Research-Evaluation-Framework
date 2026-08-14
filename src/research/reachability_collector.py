@@ -49,10 +49,17 @@ class ReachabilitySourceCollector:
 
         metadata = dict(candidate.metadata)
 
+        from datetime import datetime, timezone
+
         metadata.update(
             {
                 "collection_backend": result.backend,
                 "collection_attempts": result.attempts,
+                "retrieved_at": (
+                    datetime.now(
+                        timezone.utc
+                    ).isoformat()
+                ),
             }
         )
 

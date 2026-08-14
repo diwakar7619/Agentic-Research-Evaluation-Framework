@@ -1,3 +1,4 @@
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 
 from .result import (
@@ -47,20 +48,54 @@ class ResearchRunner:
             )
         ]
 
-        collected = []
+        max_collection_concurrency = int(
+            task.metadata.get(
+                "max_collection_concurrency",
+                8,
+            )
+        )
 
-        for candidate in allowed:
+        if max_collection_concurrency < 1:
+            raise ValueError(
+                "max_collection_concurrency must be at least 1."
+            )
 
+        def collect_one(candidate):
             try:
-                source = self.collector.collect(
+                return self.collector.collect(
                     candidate
                 )
             except Exception:
                 # A single inaccessible source must not
                 # invalidate otherwise usable research.
-                continue
+                return None
 
-            collected.append(source)
+        collected = []
+
+        if allowed:
+            with ThreadPoolExecutor(
+                max_workers=min(
+                    max_collection_concurrency,
+                    len(allowed),
+                ),
+                thread_name_prefix="research-source",
+            ) as executor:
+
+                futures = [
+                    executor.submit(
+                        collect_one,
+                        candidate,
+                    )
+                    for candidate in allowed
+                ]
+
+                # Preserve discovery order even though
+                # collection executes concurrently.
+                for future in futures:
+                    source = future.result()
+
+                    if source is not None:
+                        collected.append(source)
 
         if not collected:
             raise ValueError(

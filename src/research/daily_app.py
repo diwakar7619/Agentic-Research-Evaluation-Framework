@@ -10,6 +10,9 @@ from .adapters.jina import JinaWebAdapter
 from .adapters.youtube_real import (
     YouTubeTranscriptAdapter,
 )
+from .agent_reach import (
+    AgentReachCapabilityProvider,
+)
 from .reachability import SourceReachability
 from .reachability_collector import (
     ReachabilitySourceCollector,
@@ -48,6 +51,20 @@ def build_daily_researcher(
 
     discoverer = DDGSWebDiscoverer(
         max_results=max_sources,
+    )
+
+    agent_reach = (
+        AgentReachCapabilityProvider()
+    )
+
+    # Capability discovery is intentionally performed
+    # outside the core collector contract. Agent Reach
+    # determines which upstream channels are healthy;
+    # existing adapters remain responsible for reading
+    # and normalizing source content.
+
+    capabilities = (
+        agent_reach.snapshot()
     )
 
     reachability = SourceReachability(

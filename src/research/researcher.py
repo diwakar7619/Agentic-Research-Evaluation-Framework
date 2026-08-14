@@ -9,6 +9,7 @@ from .planner import ResearchPlanner
 from .store import ResearchStore
 from .synthesizer import ResearchSynthesizer
 from .task import ResearchTask
+from .performance import ResearchPerformance, PerformanceTimer
 
 
 @dataclass(frozen=True)
@@ -48,6 +49,7 @@ class Researcher:
         self.executor = executor
         self.synthesizer = synthesizer
         self.store = store
+        self.last_performance = ResearchPerformance()
 
     def run(
         self,
@@ -58,47 +60,101 @@ class Researcher:
         if not run_id.strip():
             raise ValueError("run_id must not be empty.")
 
-        plan = self.planner.plan(task)
+        performance = ResearchPerformance()
+        total_started_at = __import__(
+            "time"
+        ).perf_counter()
 
-        execution = self.executor.run(
-            task,
-            plan,
-        )
+        with PerformanceTimer(
+            performance,
+            "planning",
+        ):
+            plan = self.planner.plan(task)
 
-        synthesis = self.synthesizer.synthesize(
-            execution,
-        )
-
-        self.store.save_run(
-            run_id,
-            task.question,
-            execution,
-        )
-
-        for step_execution in execution.steps:
-            if step_execution.result is None:
-                continue
-
-            for evidence in step_execution.result.evidence:
-                self.store.save_source(
-                    run_id,
-                    evidence,
-                )
-                self.store.save_evidence(
-                    run_id,
-                    evidence,
-                )
-
-        for claim in synthesis.claims:
-            self.store.save_claim(
-                run_id,
-                claim,
+        with PerformanceTimer(
+            performance,
+            "execution",
+        ):
+            execution = self.executor.run(
+                task,
+                plan,
             )
 
-        self.store.save_synthesis(
-            run_id,
-            synthesis,
+        with PerformanceTimer(
+            performance,
+            "synthesis",
+        ):
+            synthesis = self.synthesizer.synthesize(
+                execution,
+            )
+
+        performance.sources_considered = sum(
+            (
+                step_execution.result.sources_considered
+                if step_execution.result is not None
+                else 0
+            )
+            for step_execution in execution.steps
         )
+
+        performance.sources_collected = sum(
+            (
+                step_execution.result.sources_collected
+                if step_execution.result is not None
+                else 0
+            )
+            for step_execution in execution.steps
+        )
+
+        performance.completed_steps = (
+            execution.completed_steps
+        )
+
+        performance.failed_steps = (
+            execution.failed_steps
+        )
+
+        with PerformanceTimer(
+            performance,
+            "persistence",
+        ):
+            self.store.save_run(
+                run_id,
+                task.question,
+                execution,
+            )
+
+            for step_execution in execution.steps:
+                if step_execution.result is None:
+                    continue
+
+                for evidence in step_execution.result.evidence:
+                    self.store.save_source(
+                        run_id,
+                        evidence,
+                    )
+                    self.store.save_evidence(
+                        run_id,
+                        evidence,
+                    )
+
+            for claim in synthesis.claims:
+                self.store.save_claim(
+                    run_id,
+                    claim,
+                )
+
+            self.store.save_synthesis(
+                run_id,
+                synthesis,
+            )
+
+        performance.total_seconds = (
+            __import__("time").perf_counter()
+            - total_started_at
+        )
+
+        self.last_performance = performance
 
         report = ResearchReport(
             run_id=run_id,

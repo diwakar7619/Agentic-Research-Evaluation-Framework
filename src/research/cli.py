@@ -192,6 +192,42 @@ def main(
             ),
         )
 
+    performance = researcher.last_performance
+
+    print()
+    print("PERFORMANCE")
+    print("-----------")
+    print(
+        f"Planning:    "
+        f"{performance.planning_seconds:.3f} seconds"
+    )
+    print(
+        f"Execution:   "
+        f"{performance.execution_seconds:.3f} seconds"
+    )
+    print(
+        f"Synthesis:   "
+        f"{performance.synthesis_seconds:.3f} seconds"
+    )
+    print(
+        f"Persistence: "
+        f"{performance.persistence_seconds:.3f} seconds"
+    )
+    print(
+        f"Total:       "
+        f"{performance.total_seconds:.3f} seconds"
+    )
+    print(
+        f"Steps:       "
+        f"completed={performance.completed_steps}, "
+        f"failed={performance.failed_steps}"
+    )
+    print(
+        f"Sources:     "
+        f"considered={performance.sources_considered}, "
+        f"collected={performance.sources_collected}"
+    )
+
     print()
     print(
         f"Run ID: {report.run_id}"
