@@ -97,3 +97,5 @@ data/cache/
 
 # Local generated outputs
 outputs/
+
+data/benchmarks/
