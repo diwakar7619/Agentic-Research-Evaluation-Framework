@@ -1,211 +1,330 @@
-AI Engineer Research
+<div align="center">
 
-Production-oriented, local-first AI research pipeline for evidence-backed web research, source validation, structured extraction, provenance, and auditable synthesis.
+# 🔬 Agentic Research Evaluation Framework
 
+### Production-oriented, local-first AI research pipeline
 
+**Evidence-backed web research · Source validation · Structured extraction · Provenance · Auditable synthesis**
 
+<br>
 
+![Tests](https://img.shields.io/badge/tests-163%20passed-2ea44f?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![LLM](https://img.shields.io/badge/LLM-Qwen3--4B-orange?style=for-the-badge)
+![Inference](https://img.shields.io/badge/Inference-Ollama-black?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active%20Development-f0ad4e?style=for-the-badge)
 
+</div>
 
+---
 
-Overview
+> **A measurable research-agent system built around evidence, reliability, observability, and performance evaluation.**
 
-ai-engineer-research turns a research question into a structured, evidence-backed research report. It is designed around the engineering problems that appear beyond a simple search-and-summarize demo:
+## 🎯 What is this?
 
-source discovery and collection
+**Agentic Research Evaluation Framework** turns a research question into a structured, evidence-backed research report.
 
-source failure isolation
+It is deliberately engineered beyond the usual:
 
-relevance filtering
+```text
+search → stuff results into prompt → ask LLM to summarize
+```
 
-evidence extraction and provenance
+Instead, the system treats **sources, evidence, failures, provenance, telemetry, and performance** as first-class engineering concerns.
 
-structured synthesis
+### Core Pipeline
 
-run-level performance measurement
+```text
+┌─────────────────────┐
+│  Research Question  │
+└──────────┬──────────┘
+           ▼
+┌─────────────────────┐
+│      Planning       │
+└──────────┬──────────┘
+           ▼
+┌─────────────────────┐
+│  Source Discovery   │
+└──────────┬──────────┘
+           ▼
+┌─────────────────────┐
+│  Source Collection  │
+└──────────┬──────────┘
+           ▼
+┌─────────────────────┐
+│ Relevance / Evidence│
+│      Processing     │
+└──────────┬──────────┘
+           ▼
+┌─────────────────────┐
+│     Validation      │
+└──────────┬──────────┘
+           ▼
+┌─────────────────────┐
+│     Synthesis       │
+└──────────┬──────────┘
+           ▼
+┌─────────────────────┐
+│ Evidence-backed     │
+│ Research Report     │
+└─────────────────────┘
 
-observability and telemetry
+        ┌───────────────────────┐
+        │ Telemetry /           │
+        │ Observability         │
+        └───────────────────────┘
+```
 
-regression testing
+---
 
-benchmark-driven optimization
+## ✨ Engineering Highlights
 
-Research Question
-       |
-       v
-    Planning
-       |
-       v
- Source Discovery
-       |
-       v
- Source Collection
-       |
-       v
- Relevance / Evidence Processing
-       |
-       v
-    Validation
-       |
-       v
-    Synthesis
-       |
-       +------------------+
-       |                  |
-       v                  v
- Persistence         Observability
-       |
-       v
- Research Report
+| Capability | What it provides |
+|---|---|
+| 🧠 **Structured Research** | Explicit research tasks instead of prompt-only orchestration |
+| 🔎 **Source Handling** | Discovery, collection, validation and source accounting |
+| 🧩 **Evidence Pipeline** | Evidence packets, windows, relevance and provenance |
+| 🛡️ **Failure Isolation** | Individual source failures do not automatically kill a run |
+| 🎯 **Relevance Filtering** | Alignment-based evidence selection |
+| 📝 **Structured Synthesis** | Claims remain connected to supporting evidence |
+| 📊 **Observability** | Stage-level timing and run-level counters |
+| 🧪 **Regression Testing** | 163 passing unit tests |
+| 📈 **Benchmarking** | Repeated source-scaling experiments |
+| 💻 **Local Inference** | Ollama + Qwen3:4b |
 
-Current local inference uses Ollama + Qwen3:4b.
+---
 
-Architecture
+# 🏗️ Architecture
 
-The system separates responsibilities across explicit boundaries:
+The system separates responsibilities across explicit boundaries.
 
-ResearchTask
-    |
-    v
-Researcher
-    |
-    +--> Planner
-    |
-    +--> Runner
-    |      +--> Discovery
-    |      +--> Collection
-    |      +--> Validation
-    |      +--> Evidence processing
-    |
-    +--> Synthesizer
-    |
-    +--> Store
-    |
-    +--> Telemetry / Observability
+```text
+                         ┌─────────────────┐
+                         │  ResearchTask   │
+                         └────────┬────────┘
+                                  │
+                                  ▼
+                         ┌─────────────────┐
+                         │   Researcher    │
+                         │  Orchestrator   │
+                         └────────┬────────┘
+                                  │
+             ┌────────────────────┼────────────────────┐
+             │                    │                    │
+             ▼                    ▼                    ▼
+      ┌────────────┐      ┌────────────┐      ┌─────────────┐
+      │   Planner  │      │   Runner   │      │ Synthesizer │
+      └────────────┘      └─────┬──────┘      └─────────────┘
+                                │
+                    ┌───────────┼───────────┐
+                    │           │           │
+                    ▼           ▼           ▼
+               Discovery   Collection  Validation
+                                │
+                                ▼
+                       Evidence Processing
+                                │
+                                ▼
+                         Research Result
+                                │
+                  ┌─────────────┴─────────────┐
+                  ▼                           ▼
+             Persistence                Observability
+```
 
-Core Engineering Features
+### Evidence Flow
 
-Unified research boundary
+```text
+Source
+  │
+  ▼
+Collected Content
+  │
+  ▼
+Alignment / Relevance
+  │
+  ▼
+Evidence
+  │
+  ▼
+Claim
+  │
+  ▼
+Synthesis
+```
 
-Researcher coordinates planning, execution, synthesis, persistence, and run-level performance measurement. Each run has an explicit run_id.
+The final answer is not treated as the only artifact. Evidence and provenance remain part of the pipeline.
 
-Structured research tasks
+---
 
-ResearchTask represents the research question, task name, source types, extraction schema, and metadata independently from the interface.
+# 🧠 Key Engineering Decisions
 
-Source failure isolation
+## 1. Explicit Research Boundary
 
-Individual source failures do not automatically terminate an otherwise valid run. The runner tracks:
+`Researcher` coordinates:
 
+- planning
+- execution
+- synthesis
+- persistence
+- performance measurement
+
+Each run has an explicit `run_id`.
+
+## 2. Source Failure Isolation
+
+A failed source is treated as a **source-level failure**, not necessarily a pipeline-level failure.
+
+The runner tracks:
+
+```text
 sources_considered
 sources_collected
 completed_steps
 failed_steps
+```
 
-Evidence alignment
+This allows the system to continue when individual sources become unavailable.
 
-Collected content is scored against the research question.
+## 3. Evidence Alignment
+
+Collected content is evaluated against the research question.
 
 Current contract:
 
-One collected source
-    -> preserve recall
+```text
+┌───────────────────────────────┐
+│ One collected source          │
+│                               │
+│ → preserve recall             │
+└───────────────────────────────┘
 
-Multiple collected sources
-    -> reject zero-alignment evidence
+┌───────────────────────────────┐
+│ Multiple collected sources    │
+│                               │
+│ → reject zero-alignment       │
+│   evidence                    │
+└───────────────────────────────┘
+```
 
-Evidence and provenance
+This behavior was introduced after regression testing exposed the precision/recall trade-off.
 
-Evidence is first-class data. The intended chain is:
+## 4. Evidence-First Synthesis
 
-Source -> Evidence -> Claim -> Synthesis
+The system maintains an explicit chain:
 
-Dedicated components cover evidence packets, evidence windows, source accounting, and telemetry.
+```text
+Source
+   ↓
+Evidence
+   ↓
+Claim
+   ↓
+Synthesis
+```
 
-Observability
+This makes downstream evaluation and provenance possible.
 
-Run-level performance includes:
+---
 
+# 📊 Observability
+
+Performance is measured at the research-run level.
+
+### Stage Timing
+
+```text
 planning_seconds
 execution_seconds
 synthesis_seconds
 persistence_seconds
 total_seconds
+```
 
-Research counters include:
+### Research Counters
 
+```text
 sources_considered
 sources_collected
 completed_steps
 failed_steps
+```
 
-This allows latency investigation by stage instead of guesswork.
+> **Measure the bottleneck before optimizing it.**
 
-Benchmarking
+---
 
-Benchmark entry point:
-
-scripts/benchmark_research.py
-
-Current source levels:
-
-5, 10, 25
-
-with repeated measurements and warmup.
-
-Each run records exit code, wall time, reported pipeline time, stage timings, completed/failed steps, source counts, stdout, and stderr.
-
-Artifacts are stored in data/benchmarks/ and ignored by Git.
-
-Measured Baseline
+# ⚡ Performance Baseline
 
 Current local configuration:
 
-Model: Qwen3:4b
-Inference: Ollama
-Runtime: local
+```text
+Model       Qwen3:4b
+Inference   Ollama
+Runtime     Local
+```
 
-Latest successful observations:
+### Latest Benchmark
 
-Requested sources
+| Requested Sources | Successful | Partial / Failed | Mean* |
+|---:|---:|---:|---:|
+| **5** | 3/3 | 0 | **220.373 s** |
+| **10** | 2/3 | 1 | **211.728 s** |
+| **25** | 1/3 | 2 | **452.404 s** |
 
-Successful runs
+\* The 25-source result is based on one successful observation and is therefore **not statistically stable**.
 
-Successful mean
+### Overall
 
-5
+```text
+Successful runs        6
+Failed / partial runs  3
+```
 
-3/3
+Observed successful runs:
 
-220.373 s
+```text
+~177 s → ~452 s
+```
 
-10
+These measurements are the **current baseline**, not a performance claim.
 
-2/3
+---
 
-211.728 s
+# 🧪 Validation
 
-25
+## Full Unit Regression
 
-1/3
+Latest result:
 
-452.404 s*
+```text
+163 passed
+```
 
-* One successful observation only, so this is not statistically stable.
+Coverage includes:
 
-Latest benchmark totals:
+- source failure handling
+- relevance behavior
+- runner concurrency
+- telemetry
+- telemetry integration
+- observability
+- researcher integration
+- synthesizer contracts
+- benchmark classification
 
-Successful runs: 6
-Failed / partial runs: 3
+Run:
 
-Observed successful runs ranged from approximately 177 s to 452 s, depending on workload and source count.
+```powershell
+$env:PYTHONPATH="src"
+python -m pytest tests\unit -q
+```
 
-These numbers are a baseline, not a final performance claim.
+## Real End-to-End Validation
 
-Real End-to-End Validation
+The real research pipeline has been validated without replacing the main production components with mocks.
 
-The real pipeline, rather than only mocks, has passed:
-
+```text
 REAL ResearchRunner: PASS
 
 completed_steps: 4
@@ -213,268 +332,412 @@ sources:          1
 evidence:         1
 claims:           1
 syntheses:        1
+```
 
-Observed real E2E runtimes include 18.24 s and 30.04 s. These are separate executions, not a controlled before/after comparison.
+Observed real E2E runtimes include:
 
-Reliability Validation
+```text
+18.24 s
+30.04 s
+```
 
-Latest full unit regression:
+These are separate executions and are **not a controlled before/after benchmark**.
 
-163 passed
+Run:
 
-Dedicated reliability coverage includes source failures, relevance, concurrency, telemetry, observability, integration, synthesizer contracts, and benchmark classification.
-
-Reliability gate:
-
-17 passed
-
-Testing
-
-Full unit suite:
-
-$env:PYTHONPATH="src"
-python -m pytest tests\unit -q
-
-Real E2E:
-
+```powershell
 $env:PYTHONPATH="src"
 
 python -m pytest `
     tests\unit\test_researcher_real_e2e.py `
     -q `
     -s
+```
 
-Local Model Setup
+---
 
-Verify Ollama:
+# 🛡️ Reliability Gates
 
+Dedicated reliability testing covers:
+
+```text
+Source failure isolation
+        +
+Relevance behavior
+        +
+Runner concurrency
+        +
+Telemetry
+        +
+Telemetry integration
+        +
+Observability
+```
+
+Latest reliability gate:
+
+```text
+17 passed
+```
+
+---
+
+# 💻 Local Setup
+
+## Requirements
+
+- Python 3.12
+- `uv`
+- Ollama
+- Qwen3:4b
+- Hardware capable of running the local model
+
+## Installation
+
+```powershell
+git clone https://github.com/diwakar7619/Agentic-Research-Evaluation-Framework.git
+
+cd Agentic-Research-Evaluation-Framework
+
+uv sync
+
+$env:PYTHONPATH="src"
+```
+
+## Verify Ollama
+
+```powershell
 ollama list
+```
 
 Expected model:
 
+```text
 qwen3:4b
+```
 
-Verify the local API:
+Check the local HTTP API:
 
+```powershell
 Invoke-WebRequest `
     -Uri "http://127.0.0.1:11434/api/tags" `
     -UseBasicParsing
+```
 
-Expected status: 200.
+Expected:
 
-Installation
+```text
+HTTP 200
+```
 
-git clone https://github.com/diwakar7619/ai-engineer-research.git
-cd ai-engineer-research
-uv sync
-$env:PYTHONPATH="src"
-python -m pytest tests\unit -q
+---
+
+# 🚀 Usage
 
 Inspect the current CLI contract:
 
+```powershell
+$env:PYTHONPATH="src"
+
 python -m research.cli --help
+```
 
-Project Structure
+The README intentionally does not hard-code potentially stale CLI arguments. The implementation remains the source of truth.
 
-ai-engineer-research/
-├── src/research/
-│   ├── alignment.py
-│   ├── daily_app.py
-│   ├── evidence_packet.py
-│   ├── evidence_window.py
-│   ├── execution.py
-│   ├── executor.py
-│   ├── llm.py
-│   ├── ollama.py
-│   ├── observability.py
-│   ├── planner.py
-│   ├── researcher.py
-│   ├── result.py
-│   ├── runner.py
-│   ├── source.py
-│   ├── source_accounting.py
-│   ├── store.py
-│   ├── synthesizer.py
-│   ├── task.py
-│   ├── telemetry.py
-│   └── validator.py
-├── tests/unit/
-├── scripts/benchmark_research.py
-├── data/benchmarks/
+---
+
+# 📁 Project Structure
+
+```text
+Agentic-Research-Evaluation-Framework/
+│
+├── src/
+│   └── research/
+│       ├── alignment.py
+│       ├── daily_app.py
+│       ├── evidence_packet.py
+│       ├── evidence_window.py
+│       ├── execution.py
+│       ├── executor.py
+│       ├── llm.py
+│       ├── ollama.py
+│       ├── observability.py
+│       ├── planner.py
+│       ├── researcher.py
+│       ├── result.py
+│       ├── runner.py
+│       ├── source.py
+│       ├── source_accounting.py
+│       ├── store.py
+│       ├── synthesizer.py
+│       ├── task.py
+│       ├── telemetry.py
+│       └── validator.py
+│
+├── tests/
+│   └── unit/
+│
+├── scripts/
+│   └── benchmark_research.py
+│
+├── data/
+│   └── benchmarks/
+│
 ├── pyproject.toml
 └── README.md
+```
 
-Engineering Principles
+---
 
-Explicit contracts: planner, executor, synthesizer, store, and model-provider boundaries are independently testable.
+# 📈 Benchmarking
 
-Failure isolation: a failed source should not destroy an otherwise valid run.
+Benchmark entry point:
 
-Evidence first: claims remain connected to supporting evidence.
+```text
+scripts/benchmark_research.py
+```
 
-Observability before optimization: performance changes are measured against a baseline.
+The benchmark evaluates multiple source levels with repeated runs and warmup.
 
-Local-first development: current inference runs through local Ollama.
+Each run records:
 
-Reproducible validation: targeted tests precede broader regression.
+```text
+exit_code
+wall_time_seconds
+reported_total_seconds
 
-Current Limitations
+planning_seconds
+execution_seconds
+synthesis_seconds
+persistence_seconds
 
-This project is production-oriented and production-hardened in several areas, but does not yet claim fully production-ready deployment status.
+completed_steps
+failed_steps
 
-Latency
+sources_considered
+sources_collected
+
+stdout
+stderr
+```
+
+Run:
+
+```powershell
+$env:PYTHONPATH="src"
+
+python scripts\benchmark_research.py
+```
+
+Artifacts are written to:
+
+```text
+data/benchmarks/
+```
+
+and are ignored by Git.
+
+---
+
+# ⚡ Current Reality
+
+> **Reliability is substantially hardened. Latency optimization remains the primary engineering bottleneck.**
+
+```text
+163 unit tests          PASS
+17-test reliability    PASS
+Real E2E                PASS
+Local Ollama            PASS
+Benchmark harness       PASS
+
+Latency optimization    🚧
+Retrieval optimization  🚧
+Cache optimization      🚧
+Production deployment   🚧
+```
+
+The system should therefore be described as:
+
+> **production-oriented and reliability-hardened**
+
+rather than claiming full production readiness.
+
+---
+
+# 🛠️ Performance Roadmap
+
+```text
+                 CURRENT BASELINE
+                        │
+                        ▼
+               ┌─────────────────┐
+               │ Stage Profiling │
+               └────────┬────────┘
+                        │
+       ┌────────────────┼────────────────┐
+       ▼                ▼                ▼
+  LLM Latency       Fetching        Retrieval
+       │                │                │
+       └────────────────┼────────────────┘
+                        ▼
+               Cache + Deduplication
+                        │
+                        ▼
+               Embedding Retrieval
+                        │
+                        ▼
+                Hybrid Retrieval
+                        │
+                        ▼
+               Top-K Evidence
+                        │
+                        ▼
+             Prompt / Token Reduction
+                        │
+                        ▼
+                    Benchmark
+                        │
+                        ▼
+                Compare Baseline
+```
+
+An optimization is accepted only when its effect can be measured against the baseline.
+
+---
+
+# ⚠️ Current Limitations
+
+### Latency
 
 Multi-source research currently takes several minutes in the measured benchmark.
 
-Benchmark stability
+### Benchmark Stability
 
-The latest 25-source workload had:
+Higher source counts currently produce partial or failed runs.
 
+Latest 25-source workload:
+
+```text
 1 successful
-2 failed / partial
+2 partial / failed
+```
 
-Retrieval efficiency
+### Retrieval Efficiency
 
-Potential improvements include:
+Potential optimization areas:
 
-source deduplication
+- source deduplication
+- caching
+- embedding-based retrieval
+- hybrid lexical/vector retrieval
+- top-K evidence selection
+- prompt/token reduction
 
-caching
+### Local Inference
 
-embedding-based retrieval
+Latency depends on:
 
-hybrid lexical/vector retrieval
+- model size
+- prompt size
+- generated token count
+- CPU/GPU utilization
+- concurrent requests
+- local hardware
 
-top-K evidence selection
+---
 
-Local inference
+# 📌 Development Status
 
-Latency depends on model size, CPU/GPU utilization, prompt size, generated token count, concurrency, and local hardware.
+| Component | Status |
+|---|:---:|
+| Structured research tasks | ✅ |
+| Planning | ✅ |
+| Research execution | ✅ |
+| Source failure isolation | ✅ |
+| Evidence handling | ✅ |
+| Relevance filtering | ✅ |
+| Synthesis | ✅ |
+| Persistence | ✅ |
+| Telemetry | ✅ |
+| Observability | ✅ |
+| Unit regression | ✅ |
+| Real E2E | ✅ |
+| Benchmark harness | ✅ |
+| Performance baseline | ✅ |
+| Latency optimization | 🚧 |
+| Retrieval / cache optimization | 🚧 |
+| Production deployment hardening | 🚧 |
 
-Performance Roadmap
+---
 
-Baseline
-   |
-   v
-Stage-level profiling
-   |
-   +--> LLM latency
-   +--> source fetching
-   +--> extraction
-   +--> retrieval
-   +--> persistence
-   |
-   v
-Caching + deduplication
-   |
-   v
-Embedding retrieval
-   |
-   v
-Hybrid retrieval
-   |
-   v
-Top-K evidence selection
-   |
-   v
-Prompt / token optimization
-   |
-   v
-Benchmark
-   |
-   v
-Compare against baseline
+# 🎯 Engineering Principles
 
-An optimization is successful only when measured against the baseline.
+> **Evidence before claims.**
 
-Development Status
+> **Measure before optimizing.**
 
-Component
+> **Fail at the smallest reasonable boundary.**
 
-Status
+> **Keep contracts explicit.**
 
-Research task model
+> **Treat observability as part of the system, not an afterthought.**
 
-Complete
+> **Prefer measured engineering trade-offs over fashionable architecture.**
 
-Planner
+---
 
-Complete
+# 🎓 What This Project Demonstrates
 
-Research execution
+This is an **AI engineering project**, not a model-training project.
 
-Complete
+It demonstrates practical engineering around LLM systems:
 
-Source failure isolation
+- modular research orchestration
+- provider abstraction
+- local LLM integration
+- structured task modeling
+- source-level failure isolation
+- evidence processing
+- relevance filtering
+- provenance
+- telemetry
+- observability
+- benchmark design
+- regression testing
+- performance analysis
 
-Complete
+The goal is not merely to produce a plausible answer.
 
-Evidence handling
+The goal is to build a research system that can be:
 
-Complete
+```text
+MEASURED
+   ↓
+INSPECTED
+   ↓
+DEBUGGED
+   ↓
+OPTIMIZED
+   ↓
+VALIDATED
+```
 
-Relevance filtering
+---
 
-Complete
+# 👤 Author
 
-Synthesis
+<div align="center">
 
-Complete
+### Pratham Diwakar
 
-Persistence
+**AI Engineer · LLM Systems · RAG · Agentic AI**
 
-Complete
+[GitHub](https://github.com/diwakar7619)
 
-Telemetry
+</div>
 
-Complete
+---
 
-Observability
-
-Complete
-
-Unit regression
-
-Complete
-
-Real E2E
-
-Complete
-
-Benchmark harness
-
-Complete
-
-Performance baseline
-
-Complete
-
-Latency optimization
-
-In progress
-
-Retrieval/cache optimization
-
-In progress
-
-Production deployment hardening
-
-In progress
-
-What This Project Demonstrates
-
-This is an AI engineering project, not a model-training project. It demonstrates modular LLM orchestration, provider abstraction, local inference, structured research tasks, source failure isolation, evidence handling, relevance filtering, provenance, telemetry, observability, benchmarking, regression testing, and performance analysis.
-
-The goal is a research system that can be measured, debugged, and improved, rather than simply producing plausible-looking answers.
-
-License
+# 📄 License
 
 See the repository license for applicable terms.
-
-Author
-
-Pratham Diwakar
-
-AI Engineer focused on production-oriented LLM, RAG, agentic systems, and AI infrastructure.
-
-GitHub: https://github.com/diwakar7619
