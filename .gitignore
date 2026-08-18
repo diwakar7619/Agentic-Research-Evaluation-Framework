@@ -99,3 +99,5 @@ data/cache/
 outputs/
 
 data/benchmarks/
+
+data/latency_diagnostics_*/

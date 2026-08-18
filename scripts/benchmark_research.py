@@ -150,6 +150,30 @@ def execute_run(
     )
 
 
+def classify_runs(runs: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Classify non-warmup benchmark runs by actual research success."""
+
+    successful = [
+        run
+        for run in runs
+        if not run["warmup"]
+        and run["exit_code"] == 0
+        and run["failed_steps"] == 0
+    ]
+
+    failed = [
+        run
+        for run in runs
+        if not run["warmup"]
+        and (
+            run["exit_code"] != 0
+            or run["failed_steps"] != 0
+        )
+    ]
+
+    return successful, failed
+
+
 def main() -> int:
 
     parser = argparse.ArgumentParser(
@@ -286,9 +310,11 @@ def main() -> int:
                 f"{result.reported_total_seconds}"
             )
 
-            if result.exit_code != 0:
+            if result.exit_code != 0 or result.failed_steps != 0:
                 print(
                     f"WARNING: {run_id} failed. "
+                    f"exit_code={result.exit_code}, "
+                    f"failed_steps={result.failed_steps}. "
                     "Continuing remaining repetitions."
                 )
 
@@ -306,19 +332,7 @@ def main() -> int:
     print(f"Manifest: {manifest_path}")
     print()
 
-    successful = [
-        r
-        for r in manifest["runs"]
-        if r["exit_code"] == 0
-        and not r["warmup"]
-    ]
-
-    failed = [
-        r
-        for r in manifest["runs"]
-        if r["exit_code"] != 0
-        and not r["warmup"]
-    ]
+    successful, failed = classify_runs(manifest["runs"])
 
     print(f"Successful runs: {len(successful)}")
     print(f"Failed runs:     {len(failed)}")
